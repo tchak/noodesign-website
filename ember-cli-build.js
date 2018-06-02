@@ -9,6 +9,11 @@ module.exports = function(defaults) {
         '/'
       ]
     },
+    emberCliConcat: {
+      css: {
+        concat: true
+      }
+    },
     postcssOptions: {
       compile: {
         plugins: [
@@ -18,7 +23,7 @@ module.exports = function(defaults) {
     },
     'ember-font-plex': {
       fonts: [
-        'IBM Plex Sans',
+        'IBM Plex Sans Condensed',
         'IBM Plex Mono'
       ]
     },
@@ -36,6 +41,9 @@ module.exports = function(defaults) {
     'ember-service-worker': {
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
+    },
+    vendorFiles: {
+      'jquery.js': null
     }
   });
 

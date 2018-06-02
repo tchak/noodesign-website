@@ -201,7 +201,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'IBM Plex Sans',
+      'IBM Plex Sans Condensed',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -263,11 +263,11 @@ module.exports = {
     'sm': '.875rem',    // 14px
     'base': '1rem',     // 16px
     'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    // 'xl': '1.25rem',    // 20px
+    // '2xl': '1.5rem',    // 24px
+    // '3xl': '1.875rem',  // 30px
+    // '4xl': '2.25rem',   // 36px
+    // '5xl': '3rem',      // 48px
   },
 
 
@@ -293,8 +293,8 @@ module.exports = {
     'medium': 500,
     'semibold': 600,
     'bold': 700,
-    'extrabold': 800,
-    'black': 900,
+    // 'extrabold': 800,
+    // 'black': 900,
   },
 
 
@@ -405,9 +405,9 @@ module.exports = {
   borderWidths: {
     default: '1px',
     '0': '0',
-    '2': '2px',
-    '4': '4px',
-    '8': '8px',
+    // '2': '2px',
+    // '4': '4px',
+    // '8': '8px',
   },
 
 
@@ -854,7 +854,7 @@ module.exports = {
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderColors: ['responsive', 'hover'],
-    borderRadius: ['responsive'],
+    // borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidths: ['responsive'],
     cursor: ['responsive'],
@@ -875,12 +875,12 @@ module.exports = {
     opacity: ['responsive'],
     overflow: ['responsive'],
     padding: ['responsive'],
-    pointerEvents: ['responsive'],
+    // pointerEvents: ['responsive'],
     position: ['responsive'],
-    resize: ['responsive'],
-    shadows: ['responsive'],
-    svgFill: [],
-    svgStroke: [],
+    // resize: ['responsive'],
+    // shadows: ['responsive'],
+    // svgFill: [],
+    // svgStroke: [],
     textAlign: ['responsive'],
     textColors: ['responsive', 'hover'],
     textSizes: ['responsive'],
