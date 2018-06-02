@@ -1,0 +1,10 @@
+<div class="container lg:px-8">
+  <h2 class="text-center m-8">{{model.slug}}</h2>
+
+  <time class="block font-medium">{{model.date}}</time>
+  <h3 class="mt-4 mb-6">{{model.title}}</h3>
+
+  {{#each model.description as |text|}}
+    <p class="text-left mb-2">{{text}}</p>
+  {{/each}}
+</div>
