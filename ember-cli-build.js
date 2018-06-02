@@ -4,7 +4,35 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
-    // Add options here
+    prember: {
+      urls: [
+        '/'
+      ]
+    },
+    postcssOptions: {
+      compile: {
+        plugins: [
+          require('tailwindcss')('./config/tailwind.js')
+        ]
+      }
+    },
+    'ember-font-plex': {
+      fonts: [
+        'IBM Plex Sans',
+        'IBM Plex Mono'
+      ]
+    },
+    'ember-cli-image-transformer': {
+      images: [
+        {
+          inputFilename: 'public/assets/images/generate/logo.png',
+          outputFileName: 'appicon-',
+          convertTo: 'png',
+          destination: 'assets/icons/',
+          sizes: [32, 192, 280, 512]
+        }
+      ]
+    }
   });
 
   // Use `app.import` to add additional libraries to the generated
