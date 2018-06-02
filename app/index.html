@@ -9,13 +9,16 @@
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/noodesign.css">
+    <link integrity="" rel="preload" href="{{rootURL}}assets/vendor.css" as="style">
+    <link integrity="" rel="preload" href="{{rootURL}}assets/noodesign.css" as="style">
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
+
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/noodesign.css">
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/noodesign.js"></script>

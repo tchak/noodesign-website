@@ -32,6 +32,10 @@ module.exports = function(defaults) {
           sizes: [32, 192, 280, 512]
         }
       ]
+    },
+    'ember-service-worker': {
+      versionStrategy: 'every-build',
+      registrationStrategy: 'inline'
     }
   });
 
