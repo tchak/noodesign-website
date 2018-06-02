@@ -174,10 +174,10 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
+    // 'sm': '576px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    // 'lg': '992px',
+    // 'xl': '1200px',
   },
 
 
@@ -862,7 +862,7 @@ module.exports = {
     flexbox: ['responsive'],
     // float: ['responsive'],
     fonts: ['responsive'],
-    fontWeights: ['responsive', 'hover'],
+    fontWeights: ['responsive'], // 'hover'],
     height: ['responsive'],
     leading: ['responsive'],
     lists: ['responsive'],
