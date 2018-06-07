@@ -20,19 +20,24 @@
 
 <div class="max-w-screen flex-wrap flex justify-center text-center border-l border-b border-grey-lighter">
   {{#each model.events as |event|}}
-      <div class="h-48 border-r border-t border-grey-lighter
-        bg-igor-{{event.color}} md:bg-white hover:bg-igor-{{event.color}}
+    {{#if event}}
+      {{#link-to "event" event.slug class=(concat "bg-igor-" event.color "-gray hover:bg-white
+        text-igor-" event.color " hover:text-igor-" event.color "-lighter
+        md:h-48 border-r border-t border-grey-lighter
+        no-underline font-bold text-sm md:text-base
         w-full md:w-1/3
         items-center justify-around
-        {{if event 'flex' 'hidden md:flex'}}">
-        {{#if event}}
-          <h3>
-            {{#link-to "event" event.slug class="p-4 text-black no-underline bg-grey-lighter font-bold text-sm md:text-base"}}
-              {{event.slug}}
-            {{/link-to}}
-          </h3>
-        {{/if}}
+        flex")}}
+          {{event.slug}}
+      {{/link-to}}
+    {{else}}
+      <div class="md:h-48 border-r border-t border-grey-lighter
+        w-full md:w-1/3
+        relative
+        items-center justify-around
+        hidden md:flex">
       </div>
+    {{/if}}
   {{/each}}
 </div>
 

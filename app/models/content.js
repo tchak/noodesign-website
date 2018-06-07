@@ -20,7 +20,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
     events: [
       {
         slug: 'CONFÉRENCE MAI',
-        color: 'red',
+        color: '1',
         date: '22 mai 2018',
         title: '« Intelligence artificielle et Design de l’attention »',
         description: [
@@ -29,7 +29,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'SÉMINAIRE 2018/2019',
-        color: 'green',
+        color: '2',
         date: '2018/2019',
         title: '« Expression et Individuation. Enjeux artistiques, exosomatiques et politiques »',
         description: [
@@ -38,7 +38,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 2018',
-        color: 'blue',
+        color: '3',
         date: 'Fin Novembre 2018',
         title: '“Technical Culture at the age of digital mediations. Cogitating, making, affecting”',
         description: [
@@ -49,7 +49,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 2019',
-        color: 'yellow',
+        color: '4',
         date: 'Début Avril 2019',
         title: '“Technical Culture at the age of deep learning mediations. Cogitating, making, affecting”',
         description: [
@@ -60,7 +60,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 2019',
-        color: 'light-blue',
+        color: '5',
         date: '17 et 18 Janvier 2019',
         title: '“L’esthétique et le design contributif, vers une nouvelle fabrique du commun” avec Richard Sennett',
         description: [
