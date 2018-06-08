@@ -1,5 +1,5 @@
-<div class="font-mono text-black leading-normal text-base">
-  <header class="font-sans p-4 border-b border-grey-lighter flex items-center justify-between flex-wrap">
+<div class="flex flex-col font-mono text-black leading-normal text-base h-full">
+  <header class="flex flex-no-shrink items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter">
     <h1 class="flex items-center flex-no-shrink mr-8">
       {{#link-to "index"}}
         {{responsive-image image="logo_noos.png" class="w-48" alt="NOODESIGN"}}
@@ -21,9 +21,11 @@
     </div>
   </header>
 
-  {{outlet}}
+  <div class="flex-1">
+    {{outlet}}
+  </div>
 
-  <footer class="bg-black font-sans text-white md:text-lg p-6 md:p-8 mt-8">
+  <footer class="bg-black font-sans text-white md:text-lg p-6 mt-8 flex-no-shrink">
     <p class="text-center m-6">
       contact : <a class="text-white" href="mailto:contact@noodesign.org">contact@noodesign.org</a>
     </p>
