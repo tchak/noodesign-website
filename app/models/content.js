@@ -23,8 +23,11 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
         color: '1',
         date: '22 mai 2018',
         title: '« Intelligence artificielle et Design de l’attention »',
-        description: [
-          'avec Tristan Harris, au MAIF SOCIAL CLUB'
+        with: [
+          'Tristan Harris'
+        ],
+        organizers: [
+          'MAIF SOCIAL CLUB'
         ]
       },
       {
@@ -32,8 +35,8 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
         color: '2',
         date: '2018/2019',
         title: '« Expression et Individuation. Enjeux artistiques, exosomatiques et politiques »',
-        description: [
-          'Partenaires organisateurs : EHESS / IRI-Centre Pompidou / Institut Giorgio Colli'
+        organizers: [
+          'EHESS / IRI-Centre Pompidou / Institut Giorgio Colli'
         ]
       },
       {
@@ -41,8 +44,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
         color: '3',
         date: 'Fin Novembre 2018',
         title: '“Technical Culture at the age of digital mediations. Cogitating, making, affecting”',
-        description: [
-          'Partenaires organisateurs :',
+        organizers: [
           'Ecole des Hautes Etudes en Sciences Sociales – CRAL',
           'Ecole Normale Supérieure de Cachan – département du designInstitute of Expérimental Design and Media Cultures, Basel'
         ]
@@ -52,8 +54,8 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
         color: '4',
         date: 'Début Avril 2019',
         title: '“Technical Culture at the age of deep learning mediations. Cogitating, making, affecting”',
-        description: [
-          'Partenaires organisateurs : Ecole des Hautes Etudes en Sciences Sociales – CRAL',
+        organizers: [
+          'Ecole des Hautes Etudes en Sciences Sociales – CRAL',
           'Ecole Normale Supérieure de Cachan – département du design',
           'Institute of Expérimental Design and Media Cultures, Basel'
         ]
@@ -63,8 +65,8 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
         color: '5',
         date: '17 et 18 Janvier 2019',
         title: '“L’esthétique et le design contributif, vers une nouvelle fabrique du commun” avec Richard Sennett',
-        description: [
-          'Partenaires : Ecole des Hautes Etudes en Sciences Sociales – CRAL',
+        organizers: [
+          'Ecole des Hautes Etudes en Sciences Sociales – CRAL',
           'Ecole Normale Supérieure – département du design',
           'Institute of Expérimental Design and Media Cultures, Basel',
           'Central Saint Martins, college of art and design, London',

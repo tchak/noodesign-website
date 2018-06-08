@@ -23,7 +23,7 @@
     {{#if event}}
       {{#link-to "event" event.slug class=(concat "bg-igor-" event.color "-gray hover:bg-white
         text-igor-" event.color " hover:text-igor-" event.color "-lighter
-        md:h-48 border-r border-t border-grey-lighter
+        p-4 md:h-48 border-r border-t border-grey-lighter
         no-underline font-bold text-sm md:text-base
         w-full md:w-1/3
         items-center justify-around
@@ -31,7 +31,7 @@
           {{event.slug}}
       {{/link-to}}
     {{else}}
-      <div class="md:h-48 border-r border-t border-grey-lighter
+      <div class="p-4 md:h-48 border-r border-t border-grey-lighter
         w-full md:w-1/3
         relative
         items-center justify-around

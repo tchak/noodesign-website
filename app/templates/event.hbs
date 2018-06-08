@@ -4,7 +4,12 @@
   <time class="block font-medium">{{model.date}}</time>
   <h3 class="mt-4 mb-6">{{model.title}}</h3>
 
-  {{#each model.description as |text|}}
+  {{#if model.with}}
+    <p class="text-left mb-6">avec : {{model.with}}</p>
+  {{/if}}
+
+  <p class="text-left mb-2">Partenaires organisateurs :</p>
+  {{#each model.organizers as |text|}}
     <p class="text-left mb-2">{{text}}</p>
   {{/each}}
 </div>
