@@ -602,6 +602,9 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem',
+    '24': '6rem'
   },
 
 
@@ -630,6 +633,8 @@ module.exports = {
     '4': '1rem',
     '6': '1.5rem',
     '8': '2rem',
+    '10': '2.5rem',
+    '12': '3rem'
   },
 
 
@@ -830,12 +835,12 @@ module.exports = {
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover'],
     tracking: ['responsive'],
-    userSelect: ['responsive'],
-    verticalAlign: ['responsive'],
+    //userSelect: ['responsive'],
+    //verticalAlign: ['responsive'],
     visibility: ['responsive'],
     whitespace: ['responsive'],
     width: ['responsive'],
-    // zIndex: ['responsive'],
+    zIndex: []
   },
 
 

@@ -1,5 +1,5 @@
-<div class="flex flex-col font-mono text-black leading-normal text-base h-full">
-  <header class="flex flex-no-shrink items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter">
+<div class="flex flex-col font-mono text-black leading-normal text-base h-full mt-12">
+  <header class="flex fixed pin-t pin-r pin-l items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter bg-white z-10">
     <h1 class="flex items-center flex-no-shrink mr-8">
       {{#link-to "index"}}
         {{responsive-image image="logo_noos.png" class="w-48" alt="NOODESIGN"}}
@@ -13,7 +13,7 @@
     <div class="{{if isExpanded 'block' 'hidden md:block'}} w-full flex-grow md:flex md:items-center md:w-auto mt-2">
       <div class="text-sm md:flex-grow">
         {{#each model.nav as |item|}}
-          <a href="/{{item.link}}" class="text-base font-light block mt-4 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4">
+          <a href="/{{item.link}}" {{action (toggle "isExpanded" this) preventDefault=false}} class="text-base font-light block mt-4 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4">
             {{item.title}}
           </a>
         {{/each}}
@@ -21,11 +21,11 @@
     </div>
   </header>
 
-  <div class="flex-1">
+  <div class="mt-6 flex-1">
     {{outlet}}
   </div>
 
-  <footer class="bg-black font-sans text-white md:text-lg p-6 mt-8 flex-no-shrink">
+  <footer class="bg-black font-sans text-white md:text-lg p-6 mt-10 flex-no-shrink">
     <p class="text-center m-6">
       contact : <a class="text-white" href="mailto:contact@noodesign.org">contact@noodesign.org</a>
     </p>

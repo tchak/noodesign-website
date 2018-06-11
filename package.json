@@ -44,6 +44,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-resolver": "^4.0.0",
     "ember-responsive-image": "^1.0.0-rc.5",
+    "ember-router-scroll": "^0.7.0",
     "ember-service-worker": "^0.6.12",
     "ember-service-worker-asset-cache": "^0.6.2",
     "ember-service-worker-index": "^0.6.7",
