@@ -3,6 +3,13 @@ import content from '../models/content';
 
 export default Route.extend({
   model() {
-    return content.fr;
+    let { nav, about, projects, events } = content.fr;
+    return {
+      nav,
+      about,
+      projects,
+      archived: events.filter(({ archived }) => archived),
+      events: events.filter(({ archived }) => !archived)
+    };
   }
 });

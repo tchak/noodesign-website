@@ -61,6 +61,11 @@
   * @import "utilities/skew-transforms";
   */
 
-  html, body {
-    height: 100%;
-  }
+html, body {
+  height: 100%;
+}
+
+.transition-bg {
+  transition-property: background-color, color;
+  transition-duration: 2s;
+}

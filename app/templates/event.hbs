@@ -4,12 +4,22 @@
   <time class="block font-medium">{{model.date}}</time>
   <h3 class="mt-4 mb-6">{{model.title}}</h3>
 
+  {{#if model.where}}
+    <p class="text-left mb-6">au {{model.where}}</p>
+  {{/if}}
+
   {{#if model.with}}
     <p class="text-left mb-6">avec : {{model.with}}</p>
   {{/if}}
 
   <p class="text-left mb-2">Partenaires organisateurs :</p>
-  {{#each model.organizers as |text|}}
+  {{#each model.partners as |text|}}
     <p class="text-left mb-2">{{text}}</p>
+  {{/each}}
+
+  {{#each model.urls as |url|}}
+    <p class="text-left mb-2">
+      <a href={{url}}>{{link-title url}}</a>
+    </p>
   {{/each}}
 </div>
