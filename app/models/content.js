@@ -42,8 +42,9 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
     ],
     events: [
       {
+        archived: true,
         slug: 'CONFÉRENCE MAI',
-        color: '1',
+        color: '5',
         date: '22 mai 2018',
         title: '« Intelligence artificielle et Design de l’attention »',
         with: [
@@ -55,7 +56,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'SÉMINAIRE 2018/2019',
-        color: '2',
+        color: '1',
         date: '2018/2019',
         title: '« Expression et Individuation. Enjeux artistiques, exosomatiques et politiques »',
         partners: [
@@ -64,7 +65,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 2018',
-        color: '3',
+        color: '2',
         date: 'Fin novembre 2018',
         title: '“Technical Culture at the age of digital mediations. Cogitating, making, affecting”',
         partners: [
@@ -74,7 +75,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 2019',
-        color: '4',
+        color: '3',
         date: 'Début avril 2019',
         title: '“Technical Culture at the age of deep learning mediations. Cogitating, making, affecting”',
         partners: [
@@ -85,7 +86,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         slug: 'COLLOQUE 17 ET 18 JANVIER 2019',
-        color: '5',
+        color: '4',
         date: '17 et 18 janvier 2019',
         title: '“L’esthétique et le design contributif, vers une nouvelle fabrique du commun” avec Richard Sennett',
         partners: [
@@ -99,7 +100,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         archived: true,
-        slug: 'SEMINAIRE 2013-2014',
+        slug: 'SÉMINAIRE 2013-2014',
         color: '6',
         title: 'Ecologie de l’attention',
         where: 'Centre Pompidou',
@@ -113,7 +114,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         archived: true,
-        slug: 'SEMINAIRE 2014-2015',
+        slug: 'SÉMINAIRE 2014-2015',
         color: '7',
         title: 'Le design de l’attention, Création et Automatisation',
         where: 'Centre Pompidou',
@@ -126,7 +127,7 @@ Nous sommes des êtres culturellement constitués par les techniques que nous in
       },
       {
         archived: true,
-        slug: 'SEMINAIRE 2015-2016',
+        slug: 'SÉMINAIRE 2015-2016',
         color: '1',
         title: 'Muséographie et attention, vers un art de l’ambiance',
         where: 'Centre Pompidou',

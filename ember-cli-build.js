@@ -5,6 +5,9 @@ const crawl = require('prember-crawler');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    babel: {
+      plugins: ['transform-object-rest-spread']
+    },
     prember: {
       async urls({ visit }) {
         let urls = await crawl({ visit });
@@ -41,6 +44,7 @@ module.exports = function(defaults) {
       ]
     },
     'ember-service-worker': {
+      enabled: false,
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
     },
