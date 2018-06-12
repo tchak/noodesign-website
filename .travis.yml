@@ -36,3 +36,5 @@ deploy:
   provider: script
   script: ember deploy production
   skip_cleanup: true
+  on:
+    branch: master
