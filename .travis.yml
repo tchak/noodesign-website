@@ -1,35 +1,25 @@
----
 language: node_js
 node_js:
-  - "8"
-
+- '8'
 sudo: false
 dist: trusty
-
 addons:
   chrome: stable
-
 cache:
   yarn: true
-
 env:
   global:
-    # See https://git.io/vdao3 for details.
-    - JOBS=1
-    - secure: "FhrCJVi0sL9yI0XTgB77LOUav9wfBfJ0gcwW1G8m3PVYd8ICw4DwT7Q97DDW0CfUDNowfa/qA3ykbdfEcDBmWfC0qMuwr/LzAeodyrvFrdzqDqtm2epoabQxCikIAyi+2mXuqrY8lkgQDoCsoQWqDWQI1zU2inQRU6U9mD4XFS3qFHA2jwxhaFTlcVerHKPrkyKyJMFTVzkGo+BAFCfGRVc0LxF/AkoqHSn3L6WI2LuJ9pUzUWeZRPGCQQ6xVugI3Gu4dp3rqU9HuwDub7Y5MwK0gsx7ei2Gmxvc5YUsz81+5y6vJklZp6t+uPfO+hq3wBXVE5d9aAmQrb2SIAJwE2o63JHp/Pn4ngukQF0aCrhk7BzG8HaJoRwf7FEpA03ZUNzYiO8/MRwsqeazrOa30owlhI7KSNs+FkUBcaK6b3liivcDrcanoqtgynmip3Mu5yeAkFSqGHQMckdv4H0Tbtjm4EMssioWkjAX9YhJGWbbnQelwNc1eV50wBUNqGZUEfmWgqaSp/l8QY7YMqyzNHn+G8XrgAiYXWpsiLhP9zpMGznbVhQo3iD6eA77mXFKN7tQOIOyhCA6lpuDCVQhM95PwzM9xFRGiAcDvpI2tZMx9eLbjDrY0bpQKRRDuMS0pHgbw05Tl3BVOAzi18DMBJ2eMmYwVpDRoSRF9RB039U="
-    - secure: "AJX+ln0zIwrCt4iW5+4suT0jdHhhFU+6wQSh5zKgZ/ek12KYXedc+f4JlLc/3QUzjLNgjLsSHRbXDheCF1LsmzaEEOQP+H9biS3xCLeGyjkZOHr3SEHgHn2d6YZ5b8IF95/8Q1fqvklDNm83v+RBKxifZNFEUnoMA6g0HDARXh1d6AI2gSxRo1Zip26HU429qGF39HTZy0PndiMRKbI9EvvhAn5WCZZg2R9zacfFyygkNREdv8inrfBXgPkiuzbSsiex0W1tuovfzdTQv57uOjzHUGA1Ykef4i6abTGmMenG6XwNH1wiF4UW9unUSEIjSkK3NabPG/kxe8KuYi5yb5/gDYFRZrtkG9y6NWjv7MxBM+y8sEGbR3LSF76vRMANYVHYpQm7A2u31mTAix4whZS7cNc50H+roOZquSyby5YSaYUAOEj6/9lL2ii2Aj6AmCdTlCgFOK9sgi6l8AwRKc/9FYwK+9iR4ukzicNHdmC57vlpEejDiXoEvt0U/Id/ew5os6Xj6HwaBqB6Qo4vYVMn/ah10mkVlF/gtd4g/ioYARhPQxwEEb9+ahB5Os1rZRGWR0l7jm13UFvCRlYE4bvqGDaLrBlNf/TinWbnQTJDn04XyHLNWbwtar8vBAsgDXyepxk4zf4Wia1/NSra/1SNB8JjI4zyYbxLcsKHtL8="
-
+  - JOBS=1
+  - secure: vFEubkm0T9G2bVnW6uhIoTJWOQEOGC4lx5rM00oulrHDKF1q3Iov3uNj0Zf0W2jB6uXBQn4TAGqj2V+D2X2TAdDLj8CdzcEpyfToc7pnAvQn4z5sh5Q9vCZ4kG1tIrgMbpVS/eueISWonJbbpR19+Z60Hrn0rVgUfiJKYWFB1DQBcadheRbka9EqTjYFjXmCZV1xCAFSoU/r9w5PW3e6BykNOCMmCnTMr+18xabTgcB+TAGWfPhSsGjZiqpXtAVJi6fQhyOxjE+PW9Dx0qMw/gE9gtoBMW43rwcWwBHc8a+IzgfVg2ki/fF8tGhJZR+q4gixHvpvwhPu8hQ2t01daLJgzhWEIBYWcTTauww96UpLdbtRZnZgJA8w87yaDEA5MvvUWlmGUrLKUIWpmERIiURWjHwNNXGzepqP6Tbk9MPTpPtQPVe15RInYa/mq394FRBBcVjDplAFN3cBWXNNhsX2mzfy/DQ3GMpxniiZwYsj4ajMYBZMeqd2B0TUoUP8h11YrAhHQ23emFHxV8j3HL0hhKrHO9mOpo/iMyLEkjBU4xOJTeJvPVjUr/Kxz3ON9g2n2McsN+fLANk1ureJqqKmYhUjUVArtkd/ybfx/XUmK/7SQqMIZUkssX55TGvVC9GR+tqgjy1ivDYvb2fJ/aPrQcanlAj8FL73+4WWLRE=
+  - secure: UWRQr6PzfoSfmhmtEdu0i+PPWNkBNTxq2P2J5PDGKUOdBsP4ueTpdFLwFeE92TLIFuW6C4HQ4T+aBUfVrVg84Y766ADqrYVbZL5OXmLPBtyO1qcy359Y1STEZb+7cxVIM/l8WuzYqRaqqFRkHwLbt2AzPP//UEW5zJjh+3nCaxfOOPHTyak8AL/ywTAfhzaAVI6H36gzCpiLeW/r4r7rty4+fG8enliLGPC8q09rSZSd94vNiLOAoczK030xfDQttCF/UKAgudhGwyn2meFfbxV8jQpYTdMazc7igtaFMup/p/MVzcPx6Kp8LogVTXuZWtbRWyT9HFgMzOqeEtqZui/2VJcJ5OfodcjH2q2O370LbkM4x4/1hJheD+sX7fVnEdEOKru4hKtSzAQfyeTVqf8POH4EXptPdofMfUUk4EPA+en7YSM7HIsN0HKTYP4Mfdsbc1UV4nRrMosKF2oNiPvn/bPjoZ3li8oFwvh/EufzrJPn0p3ItLXb12yWgg46NXs1MTdSHR2ZkIzIiUryWkjdlfRmKoj1lbUClzPbamkIaX6X05mh1BH+LGKEHL7JJeIG92rSpOgEK2Ugxg53uhffB1Oe+8qus0lZ6bufAmoWDulSk1gpyBOWoIIvo6P5xcdSTEpACEP/UArGBTNtBVpyFOvplWZ/DkVlKh6+bUA=
 before_install:
-  - curl -o- -L https://yarnpkg.com/install.sh | bash
-  - export PATH=$HOME/.yarn/bin:$PATH
-
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
 install:
-  - yarn install --non-interactive
-
+- yarn install --non-interactive
 script:
-  - yarn lint:js
-  - yarn test
-
+- yarn lint:js
+- yarn test
 deploy:
   provider: script
   script: ember deploy production
