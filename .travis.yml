@@ -16,6 +16,8 @@ env:
   global:
     # See https://git.io/vdao3 for details.
     - JOBS=1
+    - secure: O/lPDna6ah4XDLUzn1t/kPKOUGGPZRc0YoHIp/bLnQV49y9tIn+pV6a4+G5Wy/fNmeO5BnmGXB1kLTNkqXDD9WOSLe0eUXhotozbanW1flNnXHoqjFwaoZqy+dPJ9xFw+X8vBpDy3q0yuPs56/zNSrFT0GdQh7j9/yCT+68agINj2dKKN6JUwyQ2wHl74THHdQdajnbvJgmbtv6pvAH1at14SoN/5KmnFY19tW1QRU1ycaynDOJkgaQAS1yNHDfoqrjBevdZoPN6vmruXJfWV7Y3qdlcWfJ1Q7KiJCjJXJir3DTZXCceZ3VlXuz+HFwanpunsqmd5iSle89+u/SZleSYwEqRmQCrt4XnTHfKqRQOFoGAsU6v+3m5Ykz/C64SPKyVnXIzpstlj85ViwzS2/Qrimz60FRLNRHo+iYnxGkg10qooXSgu+NOZQFqz4MhFrO9pVfcu3lxu3eWG7/wudHBa/Q/Mbk0ziraMcW3hB9qXOlUNKUWnHifQlj3wYWXOrJJIaJqw+HLvgAm9F9BlftMiG2ggnGp0aINU02xWEx5DZNu2xffz7/RIDjqzEIyXGjJ1i4Pk8tl94ozXV8G9MxrBJn4XDzcQ2VDEkCkxaQmL9qupioUMyki2afRJIrASw60cD7QKgHr5xOPv4x+UlHVehpTOk4EwzyIA1743Ug=
+    - secure: OZDyQiIywh7p/i42cwBVXq+FRCq7P2GwZZWnUK9AulKGIRJtn95dDQGWOy7POcWK2sfO17eYeB1ltNzbgOOgyusyfrXWNDi5MeCx6mwPqfsYc4maJQdHdGljO9keJYQ0OAI2CFVCi8N57t1GFW4Du4IcQPDLNYkrHln5bA8UR59tiAUAetBsCmFJjkSBp/15qeQ2h0D01PGf8kH53FwPSQfILkaq+jmwFPaPECSrKGrBhVYJghKf19H40s0swlP9fBMPTZYwr9RfBc0dQX2f2h5lg1vKvH65fJOJIOUX6dx3aBHsbN0+dqh1Gbbg4PZfP7DXYRa3ddoQ7zSMvPhE94mYc+QQQPAmV9Cy49IhNK11V72AErFrtOa4RssF7bbrx4vg2mbBt3MhS4IXgmsL6maeQ9F9XnXNvpBPZHy1gaZBXuwnC3VMuw6CxOKFKBqVBXp3zAxxbg3U0rf40G91R1mJmyiRqLfadnLcHbso8Q3eec/uaVb0moaNcaefZAdd+g44BIaaWko/R7Mj9yX839oWFlUdBnPBSpxR1Ok0zxgHY0j5rfWv9mBeoxbZDqEf+YK+5y9GUjQgCEZ4q6KKP5uUQE+HOaAtoXiFsqJloBYxM6AtYmcaBvV20w6csD9iWnLqQrPDzL65pNkiv498jXQ3kkPtNAQ2ult/LZ5Hmew=
 
 before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -27,3 +29,8 @@ install:
 script:
   - yarn lint:js
   - yarn test
+
+deploy:
+  provider: script
+  script: ember deploy production
+  skip_cleanup: true
