@@ -1,4 +1,4 @@
-export default function slugify(block, i) {
+export default function slugify(block) {
   if (block.label) {
     const label = block.label.toUpperCase();
     const slug = label
