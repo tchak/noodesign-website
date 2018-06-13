@@ -12,9 +12,9 @@
     </div>
     <div class="{{if isExpanded 'block' 'hidden md:block'}} w-full flex-grow md:flex md:items-center md:w-auto mt-2">
       <div class="text-sm md:flex-grow">
-        {{#each model.nav as |item|}}
-          <a href="{{href-to "index"}}{{item.link}}" {{action (toggle "isExpanded" this) preventDefault=false}} class="text-base font-light block mt-4 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4">
-            {{item.title}}
+        {{#each model.nav as |link|}}
+          <a href="{{href-to "index"}}#{{link}}" {{action (toggle "isExpanded" this) preventDefault=false}} class="text-base font-light block mt-4 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4">
+            {{t (concat "nav." link)}}
           </a>
         {{/each}}
       </div>

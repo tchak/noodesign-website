@@ -1,26 +1,12 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
-const nav = [
-  {
-    title: 'QUI SOMMES-NOOS ?',
-    link: '#about'
-  },
-  {
-    title: 'ÉVÉNEMENTS À VENIR',
-    link: '#events'
-  },
-  {
-    title: 'PROJETS',
-    link: '#projects'
-  },
-  {
-    title: 'LES ARCHIVES',
-    link: '#archived'
-  }
-];
+const nav = ['about', 'events', 'projects', 'archived'];
 
 export default Route.extend({
+  intl: service(),
   model() {
+    this.intl.setLocale('fr-fr');
     return { nav };
   }
 });

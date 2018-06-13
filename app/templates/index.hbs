@@ -5,11 +5,11 @@
 
   <div class="md:h-8"></div>
 
-  <h2 id="about" class="text-center m-6 p-4 pt-24">QUI SOMMES NOÖS ?</h2>
+  <h2 id="about" class="text-center m-6 p-4 pt-24">{{t "nav.about"}}</h2>
 
   {{text-block text=model.about.description}}
 
-  <h2 id="events" class="text-center m-6 p-4 pt-24">ÉVÉNEMENTS À VENIR</h2>
+  <h2 id="events" class="text-center m-6 p-4 pt-24">{{t "nav.events"}}</h2>
   {{#each model.upcoming as |event|}}
     <a href={{href-to "event" event.slug}} class="
       bg-igor-{{event.color}}-gray hover:bg-white
@@ -23,12 +23,12 @@
     </a>
   {{/each}}
 
-  <h2 id="projects" class="text-center m-6 p-4 pt-24">PROJETS</h2>
+  <h2 id="projects" class="text-center m-6 p-4 pt-24">{{t "nav.projects"}}</h2>
   {{#each model.projects as |project|}}
     {{project-block project=project}}
   {{/each}}
 
-  <h2 id="archived" class="text-center m-6 p-4 pt-24">LES ARCHIVES</h2>
+  <h2 id="archived" class="text-center m-6 p-4 pt-24">{{t "nav.archived"}}</h2>
   {{#each model.archived as |event|}}
     <a href={{href-to "event" event.slug}} class="
       bg-igor-{{event.color}}-gray hover:bg-white
