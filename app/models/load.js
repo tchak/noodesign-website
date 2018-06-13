@@ -1,14 +1,13 @@
-import content from './content';
-import slugify from './slugify';
-
-export default async function load() {
+export default async function load(fetch) {
   let about,
     events = [],
     upcoming = [],
     archived = [],
     projects = [];
 
-  for (let block of content.content.map(slugify)) {
+  const content = await fetch({ url: '/content/fr.json' }).json();
+
+  for (let block of content) {
     switch (block.type) {
       case 'event':
         events.push(block);

@@ -31,6 +31,14 @@ module.exports = function(environment) {
       removeSourceDir: true,
       justCopy: false,
       extensions: ['jpg', 'jpeg', 'png', 'gif']
+    },
+
+    fastboot: {
+      hostWhitelist: [
+        'noodesign.org',
+        'noodesign.netlify.com',
+        /^localhost:\d+$/
+      ]
     }
   };
 

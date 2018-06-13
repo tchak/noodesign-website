@@ -3,7 +3,7 @@
 # compiled output
 /dist
 /tmp
-/www
+/public/content/*
 
 # dependencies
 /node_modules

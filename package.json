@@ -14,13 +14,16 @@
     "build": "ember build",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "download": "scripts/download.js"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.1",
+    "airtable": "^0.5.6",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "broccoli-asset-rev": "^2.4.5",
     "color": "^3.0.0",
+    "dotenv": "^6.0.0",
     "ember-a11y": "^0.1.15",
     "ember-cli": "~3.1.4",
     "ember-cli-app-version": "^3.0.0",
@@ -46,6 +49,8 @@
     "ember-cli-uglify": "^2.0.0",
     "ember-composable-helpers": "^2.1.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-fetch": "^5.0.0",
+    "ember-fetch-adapter": "^0.4.3",
     "ember-font-plex": "^1.0.2",
     "ember-href-to": "^1.15.1",
     "ember-intl": "^3.0.0-beta.8",
@@ -59,16 +64,17 @@
     "ember-service-worker-index": "^0.6.7",
     "ember-source": "~3.2.0",
     "ember-web-app": "^2.3.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-ember": "^5.0.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.6.0",
     "loader.js": "^4.2.3",
+    "lodash": "^4.17.10",
     "prember": "^0.4.0",
     "prember-crawler": "^0.1.0",
     "prember-middleware": "^0.1.0",
-    "tailwindcss": "^0.5.3",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-node": "^5.2.1",
-    "eslint-plugin-prettier": "^2.6.0",
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "tailwindcss": "^0.5.3"
   },
   "engines": {
     "node": ">= 8.*"
