@@ -21,16 +21,11 @@ module.exports = function(defaults) {
     },
     postcssOptions: {
       compile: {
-        plugins: [
-          require('tailwindcss')('./config/tailwind.js')
-        ]
+        plugins: [require('tailwindcss')('./config/tailwind.js')]
       }
     },
     'ember-font-plex': {
-      fonts: [
-        'IBM Plex Sans Condensed',
-        'IBM Plex Mono'
-      ]
+      fonts: ['IBM Plex Sans Condensed', 'IBM Plex Mono']
     },
     'ember-cli-image-transformer': {
       images: [

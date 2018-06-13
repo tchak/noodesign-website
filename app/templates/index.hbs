@@ -7,10 +7,10 @@
 
   <h2 id="about" class="text-center m-6 p-4 pt-24">QUI SOMMES NOÖS ?</h2>
 
-  {{text-block text=model.about}}
+  {{text-block text=model.about.description}}
 
   <h2 id="events" class="text-center m-6 p-4 pt-24">ÉVÉNEMENTS À VENIR</h2>
-  {{#each model.events as |event|}}
+  {{#each model.upcoming as |event|}}
     <a href={{href-to "event" event.slug}} class="
       bg-igor-{{event.color}}-gray hover:bg-white
       text-igor-{{event.color}} hover:text-igor-{{event.color}}-lighter

@@ -22,9 +22,7 @@ module.exports = function(deployTarget) {
     username: process.env.FTP_USERNAME,
     password: process.env.FTP_PASSWORD,
     remoteRoot: '/www',
-    exclude: [
-      'assets/fonts/**/*'
-    ]
+    exclude: ['assets/fonts/**/*']
   };
 
   return ENV;
