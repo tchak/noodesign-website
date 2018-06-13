@@ -16,8 +16,12 @@ base('Content Fr')
 
       console.log('Downloaded ' + records.length + ' records in "Fr" locale.');
 
+      const dir = path.join(__dirname, '../public/content');
+      if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir);
+      }
       fs.writeFileSync(
-        path.join(__dirname, '../public/content/fr.json'),
+        path.join(dir, 'fr.json'),
         JSON.stringify(content, null, 2)
       );
     },
