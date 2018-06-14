@@ -1,15 +1,13 @@
 <div class="container md:px-8 flex flex-col items-center justify-around">
-  <div class="my-8">
+  <div class="my-16">
     {{responsive-image image="logo.png" id="top" class="w-full max-h-screen" alt=""}}
   </div>
 
-  <div class="md:h-8"></div>
-
-  <h2 id="about" class="text-center m-6 p-4 pt-24">{{t "nav.about"}}</h2>
+  <h2 id="about" class="text-center m-6 p-4">{{t "nav.about"}}</h2>
 
   {{text-block text=model.about.description}}
 
-  <h2 id="events" class="text-center m-6 p-4 pt-24">{{t "nav.events"}}</h2>
+  <h2 id="events" class="text-center m-6 p-4">{{t "nav.events"}}</h2>
   {{#each model.upcoming as |event|}}
     <a href={{href-to "event" event.slug}} class="
       bg-igor-{{event.color}}-gray hover:bg-white
@@ -23,12 +21,12 @@
     </a>
   {{/each}}
 
-  <h2 id="projects" class="text-center m-6 p-4 pt-24">{{t "nav.projects"}}</h2>
+  <h2 id="projects" class="text-center m-6 p-4">{{t "nav.projects"}}</h2>
   {{#each model.projects as |project|}}
     {{project-block project=project}}
   {{/each}}
 
-  <h2 id="archived" class="text-center m-6 p-4 pt-24">{{t "nav.archived"}}</h2>
+  <h2 id="archived" class="text-center m-6 p-4">{{t "nav.archived"}}</h2>
   {{#each model.archived as |event|}}
     <a href={{href-to "event" event.slug}} class="
       bg-igor-{{event.color}}-gray hover:bg-white
