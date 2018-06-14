@@ -26,11 +26,9 @@ function formatForAPI({ urls, ...block }) {
   return block;
 }
 
-function formatForApp({ link, link2, ...block }) {
+function formatForApp({ Link, Link2, ...block }) {
   block = mapKeys(block, (_, key) => lowerFirst(key));
-  delete block.link;
-  delete block.link2;
-  let urls = compact([link, link2]);
+  let urls = compact([Link, Link2]);
 
   Object.assign(block, {
     urls,
