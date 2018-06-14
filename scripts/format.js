@@ -1,4 +1,11 @@
-const { mapKeys, lowerFirst, compact, capitalize, isEmpty } = require('lodash');
+const {
+  mapKeys,
+  lowerFirst,
+  compact,
+  capitalize,
+  isEmpty,
+  range
+} = require('lodash');
 
 function formatForAPI({ urls, ...block }) {
   block = mapKeys(block, (_, key) => capitalize(key));
@@ -54,10 +61,17 @@ function slugify(block) {
       .replace(/\s|\//g, '-')
       .toLowerCase();
 
-    const color = colors.shift();
+    const color = colors[index];
+    if (index < 6) {
+      index++;
+    } else {
+      index = 0;
+    }
+
     return { ...block, label, slug, color };
   }
   return block;
 }
 
-const colors = [1, 2, 3, 4, 5, 6, 7, 1, 2, 3, 4, 5, 6, 7];
+let index = 0;
+const colors = range(1, 8);
