@@ -12,6 +12,7 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
+    "build:prod": "yarn download && ember build -e production",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "lint:hbs": "ember-template-lint app/templates/* app/templates/**/*",
     "start": "ember serve",
