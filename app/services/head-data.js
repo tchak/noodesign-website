@@ -6,6 +6,7 @@ export default Service.extend({
 
   siteName: 'Noödesign',
   url: 'https://noodesign.org',
+  email: 'contact@noodesign.org',
   twitter: '@IgorGalligo',
   author: 'Igor Galligo',
   type: 'website',

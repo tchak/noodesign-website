@@ -2,7 +2,7 @@
 {{title "Noödesign"}}
 
 <div class="flex flex-col font-mono text-black leading-normal text-base h-full mt-12">
-  <header class="flex fixed pin-t pin-r pin-l items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter bg-white z-10">
+  <A11yLandmark @tagName="header" class="flex fixed pin-t pin-r pin-l items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter bg-white z-10">
     <h1 class="flex items-center flex-no-shrink mr-8">
       <a href={{href-to "index" (query-params target="top")}}>
         {{responsive-image image="logo_noos.png" class="w-48" alt="NOODESIGN"}}
@@ -10,7 +10,10 @@
     </h1>
     <div class="block md:hidden">
       <button {{action (toggle "isExpanded" headData)}} class="flex items-center px-3 py-2 border rounded text-grey-light border-grey-light hover:text-grey-lighter hover:border-grey-lighter">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        </svg>
       </button>
     </div>
     <div class="{{if headData.isExpanded 'block' 'hidden md:block'}} w-full flex-grow md:flex md:items-center md:w-auto mt-2">
@@ -22,16 +25,16 @@
         {{/each}}
       </div>
     </div>
-  </header>
+  </A11yLandmark>
 
-  <div class="mt-6 mb-12 flex-1">
+  <A11yLandmark @tagName="main" class="mt-6 mb-12 flex-1">
     {{focusing-outlet}}
-  </div>
+  </A11yLandmark>
 
-  <footer id="contact" class="bg-black font-sans text-white md:text-lg p-6 mt-12 flex-no-shrink">
+  <A11yLandmark @tagName="footer" id="contact" class="bg-black font-sans text-white md:text-lg p-6 mt-12 flex-no-shrink">
     <p class="text-center m-6">
-      contact : <a class="text-white" href="mailto:contact@noodesign.org">contact@noodesign.org</a>
+      contact : <a class="text-white" href="mailto:{{headData.email}}">{{headData.email}}</a>
     </p>
-  </footer>
+  </A11yLandmark>
 </div>
 

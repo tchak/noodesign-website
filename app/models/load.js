@@ -1,11 +1,11 @@
-export default async function load(fetch) {
+export default async function load(fetch, locale) {
   let about,
     events = [],
     upcoming = [],
     archived = [],
     projects = [];
 
-  const content = await fetch({ url: '/content/fr.json' }).json();
+  const content = await fetch({ url: `/content/${locale}.json` }).json();
 
   for (let block of content) {
     switch (block.type) {

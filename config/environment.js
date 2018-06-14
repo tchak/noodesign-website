@@ -23,6 +23,10 @@ module.exports = function(environment) {
       // when it is created
     },
 
+    sentry: {
+      debug: false
+    },
+
     'responsive-image': {
       sourceDir: 'assets/images/generate',
       destinationDir: 'assets/images/responsive',
@@ -63,7 +67,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.sentry.dsn = process.env.SENTRY_DSN;
   }
 
   return ENV;

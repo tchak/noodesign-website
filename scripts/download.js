@@ -6,6 +6,11 @@ const { formatForApp } = require('./format');
 const fs = require('fs');
 const path = require('path');
 
+function toLocale(locale) {
+  locale = locale.toLowerCase();
+  return `${locale}-${locale}`;
+}
+
 function downloadContent(locale) {
   base(`Content ${locale}`)
     .select({
@@ -25,7 +30,7 @@ function downloadContent(locale) {
           fs.mkdirSync(dir);
         }
         fs.writeFileSync(
-          path.join(dir, `${locale.toLowerCase()}.json`),
+          path.join(dir, `${toLocale(locale)}.json`),
           JSON.stringify(content, null, 2)
         );
       },

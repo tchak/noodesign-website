@@ -34,15 +34,50 @@
     ember-cli-babel "^6.12.0"
     ember-cli-htmlbars-inline-precompile "^1.0.0"
 
+"@glimmer/compiler@^0.32.3":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@glimmer/compiler/-/compiler-0.32.9.tgz#c40f11ccf0400a572a725df85cbf5506221fc6b5"
+  dependencies:
+    "@glimmer/interfaces" "^0.32.9"
+    "@glimmer/syntax" "^0.32.9"
+    "@glimmer/util" "^0.32.9"
+    "@glimmer/wire-format" "^0.32.9"
+    simple-html-tokenizer "^0.4.1"
+
 "@glimmer/di@^0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@glimmer/di/-/di-0.2.0.tgz#73bfd4a6ee4148a80bf092e8a5d29bcac9d4ce7e"
+
+"@glimmer/interfaces@^0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.32.9.tgz#8ee3a06f8d2881d1678c06595e58e607feb0a7bf"
+  dependencies:
+    "@glimmer/wire-format" "^0.32.9"
 
 "@glimmer/resolver@^0.4.1":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@glimmer/resolver/-/resolver-0.4.3.tgz#b1baae5c3291b4621002ccf8d7870466097e841d"
   dependencies:
     "@glimmer/di" "^0.2.0"
+
+"@glimmer/syntax@^0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.32.9.tgz#f8ef0a4dd361cc6d29f2e4b70a68d34f8d63dc55"
+  dependencies:
+    "@glimmer/interfaces" "^0.32.9"
+    "@glimmer/util" "^0.32.9"
+    handlebars "^4.0.6"
+    simple-html-tokenizer "^0.4.1"
+
+"@glimmer/util@^0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.32.9.tgz#7cc0d2e3bd04108984ac877ea3c55250c3facdc5"
+
+"@glimmer/wire-format@^0.32.9":
+  version "0.32.9"
+  resolved "https://registry.yarnpkg.com/@glimmer/wire-format/-/wire-format-0.32.9.tgz#e473f1d81a5d6305b764334e696fece1aab8e8b4"
+  dependencies:
+    "@glimmer/util" "^0.32.9"
 
 "@ibm/plex@=1.0.2":
   version "1.0.2"
@@ -1457,7 +1492,7 @@ broccoli-node-info@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/broccoli-node-info/-/broccoli-node-info-1.1.0.tgz#3aa2e31e07e5bdb516dd25214f7c45ba1c459412"
 
-broccoli-persistent-filter@1.4.3, broccoli-persistent-filter@^1.0.3, broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.4.2, broccoli-persistent-filter@^1.4.3:
+broccoli-persistent-filter@1.4.3, broccoli-persistent-filter@^1.0.3, broccoli-persistent-filter@^1.1.5, broccoli-persistent-filter@^1.1.6, broccoli-persistent-filter@^1.2.0, broccoli-persistent-filter@^1.4.2, broccoli-persistent-filter@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/broccoli-persistent-filter/-/broccoli-persistent-filter-1.4.3.tgz#3511bc52fc53740cda51621f58a28152d9911bc1"
   dependencies:
@@ -2412,6 +2447,14 @@ electron-to-chromium@^1.3.47:
   version "1.3.48"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.48.tgz#d3b0d8593814044e092ece2108fc3ac9aea4b900"
 
+ember-a11y-landmarks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/ember-a11y-landmarks/-/ember-a11y-landmarks-1.0.1.tgz#f5028132525c721412b3a5e373f211aee2d18263"
+  dependencies:
+    ember-cli-babel "^6.0.0"
+    ember-cli-htmlbars "^1.1.1"
+    ember-cli-htmlbars-inline-precompile "^0.4.0"
+
 ember-a11y@^0.1.15:
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/ember-a11y/-/ember-a11y-0.1.15.tgz#10729ec8ebc6183470cf460d9919863f4d499856"
@@ -2637,6 +2680,15 @@ ember-cli-head@^0.4.0, ember-cli-head@^0.4.1:
     ember-cli-babel "^6.11.0"
     ember-cli-htmlbars "^2.0.3"
 
+ember-cli-htmlbars-inline-precompile@^0.4.0:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars-inline-precompile/-/ember-cli-htmlbars-inline-precompile-0.4.4.tgz#24a7617152630d64a047e553b72e00963a4f8d73"
+  dependencies:
+    babel-plugin-htmlbars-inline-precompile "^0.2.3"
+    ember-cli-version-checker "^2.0.0"
+    hash-for-dep "^1.0.2"
+    silent-error "^1.1.0"
+
 ember-cli-htmlbars-inline-precompile@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ember-cli-htmlbars-inline-precompile/-/ember-cli-htmlbars-inline-precompile-1.0.2.tgz#5b544f664d5d9911f08cd979c5f70d8cb0ca2add"
@@ -2646,6 +2698,16 @@ ember-cli-htmlbars-inline-precompile@^1.0.0:
     hash-for-dep "^1.0.2"
     heimdalljs-logger "^0.1.7"
     silent-error "^1.1.0"
+
+ember-cli-htmlbars@^1.1.1:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/ember-cli-htmlbars/-/ember-cli-htmlbars-1.3.4.tgz#461289724b34af372a6a0c4b6635819156963353"
+  dependencies:
+    broccoli-persistent-filter "^1.0.3"
+    ember-cli-version-checker "^1.0.2"
+    hash-for-dep "^1.0.2"
+    json-stable-stringify "^1.0.0"
+    strip-bom "^2.0.0"
 
 ember-cli-htmlbars@^2.0.1, ember-cli-htmlbars@^2.0.3:
   version "2.0.3"
@@ -2724,6 +2786,16 @@ ember-cli-qunit@^4.1.1:
     ember-cli-babel "^6.11.0"
     ember-qunit "^3.3.2"
 
+ember-cli-sentry@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-sentry/-/ember-cli-sentry-3.0.0.tgz#72e5462d21a699b3dd54d8ea15c06bf2bd9a8ad7"
+  dependencies:
+    broccoli-funnel "^2.0.1"
+    broccoli-merge-trees "^2.0.0"
+    ember-cli-babel "^6.6.0"
+    raven-js "^3.15.0"
+    resolve "^1.5.0"
+
 ember-cli-shims@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/ember-cli-shims/-/ember-cli-shims-1.2.0.tgz#0f53aff0aab80b5f29da3a9731bac56169dd941f"
@@ -2743,6 +2815,22 @@ ember-cli-sri@^2.1.0:
 ember-cli-string-utils@^1.0.0, ember-cli-string-utils@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-string-utils/-/ember-cli-string-utils-1.1.0.tgz#39b677fc2805f55173735376fcef278eaa4452a1"
+
+ember-cli-template-lint@^0.7.6:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/ember-cli-template-lint/-/ember-cli-template-lint-0.7.6.tgz#33e55efa460fbfa2f108775318460ba9d6bf8667"
+  dependencies:
+    aot-test-generators "^0.1.0"
+    broccoli-concat "^3.2.2"
+    broccoli-persistent-filter "^1.2.0"
+    chalk "^2.0.1"
+    debug "^3.0.0"
+    ember-cli-version-checker "^2.1.0"
+    ember-template-lint "^0.8.16"
+    json-stable-stringify "^1.0.1"
+    md5-hex "^2.0.0"
+    strip-ansi "^4.0.0"
+    walk-sync "^0.3.2"
 
 ember-cli-test-loader@^2.2.0:
   version "2.2.0"
@@ -3184,6 +3272,17 @@ ember-source@~3.2.0:
     inflection "^1.12.0"
     jquery "^3.3.1"
     resolve "^1.6.0"
+
+ember-template-lint@^0.8.16:
+  version "0.8.18"
+  resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-0.8.18.tgz#634b3dac1195a150e110a6d93332db04f651bf81"
+  dependencies:
+    "@glimmer/compiler" "^0.32.3"
+    chalk "^2.0.0"
+    glob "^7.0.0"
+    minimatch "^3.0.4"
+    resolve "^1.1.3"
+    strip-bom "^3.0.0"
 
 ember-truth-helpers@^2.0.0:
   version "2.0.0"
@@ -4094,7 +4193,7 @@ glob@^5.0.1, glob@^5.0.10, glob@^5.0.15:
     once "^1.3.0"
     path-is-absolute "^1.0.0"
 
-glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.4, glob@^7.0.5, glob@^7.1.1, glob@^7.1.2:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -4165,7 +4264,7 @@ growly@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
 
-handlebars@^4.0.4:
+handlebars@^4.0.4, handlebars@^4.0.6:
   version "4.0.11"
   resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.0.11.tgz#630a35dfe0294bc281edae6ffc5d329fc7982dcc"
   dependencies:
@@ -6478,6 +6577,10 @@ range-parser@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
+raven-js@^3.15.0:
+  version "3.26.2"
+  resolved "https://registry.yarnpkg.com/raven-js/-/raven-js-3.26.2.tgz#9153af2416e96ccf4e0b9cbc6c90c34dda0d7e88"
+
 raw-body@2.3.2:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.3.2.tgz#bcd60c77d3eb93cde0050295c3f379389bc88f89"
@@ -6811,7 +6914,7 @@ resolve@1.5.0:
   dependencies:
     path-parse "^1.0.5"
 
-resolve@^1.1.2, resolve@^1.1.6, resolve@^1.3.0, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, resolve@^1.7.1:
+resolve@^1.1.2, resolve@^1.1.3, resolve@^1.1.6, resolve@^1.3.0, resolve@^1.3.3, resolve@^1.4.0, resolve@^1.5.0, resolve@^1.6.0, resolve@^1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
@@ -7120,6 +7223,10 @@ simple-git@^1.57.0:
   resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-1.96.0.tgz#d0279b771ed89a2d1e7d9e15f9abd7f26e319d7c"
   dependencies:
     debug "^3.1.0"
+
+simple-html-tokenizer@^0.4.1:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/simple-html-tokenizer/-/simple-html-tokenizer-0.4.3.tgz#9b00b766e30058b4bb377c0d4f97566a13ab1be1"
 
 simple-is@~0.2.0:
   version "0.2.0"
