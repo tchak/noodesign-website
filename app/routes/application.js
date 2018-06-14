@@ -9,9 +9,5 @@ export default Route.extend({
   model() {
     this.intl.setLocale('fr-fr');
     return { nav };
-  },
-
-  title() {
-    return 'Noödesign';
   }
 });

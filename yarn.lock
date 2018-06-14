@@ -2596,12 +2596,6 @@ ember-cli-deploy@^1.0.2:
     rsvp "^3.3.3"
     silent-error "^1.0.0"
 
-ember-cli-document-title@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/ember-cli-document-title/-/ember-cli-document-title-0.4.0.tgz#1d0321c443d16b104eca16a8eb42839ecd6737f2"
-  dependencies:
-    ember-cli-babel "^6.6.0"
-
 ember-cli-eslint@^4.2.1:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/ember-cli-eslint/-/ember-cli-eslint-4.2.3.tgz#2844d3f5e8184f19b2d7132ba99eb0b370b55598"
@@ -2636,7 +2630,7 @@ ember-cli-get-component-path-option@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli-get-component-path-option/-/ember-cli-get-component-path-option-1.0.0.tgz#0d7b595559e2f9050abed804f1d8eff1b08bc771"
 
-ember-cli-head@^0.4.1:
+ember-cli-head@^0.4.0, ember-cli-head@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/ember-cli-head/-/ember-cli-head-0.4.1.tgz#28b7ee86439746640834b232a3b34ab1329f3cf3"
   dependencies:
@@ -3058,6 +3052,14 @@ ember-native-dom-helpers@^0.5.10:
   dependencies:
     broccoli-funnel "^1.1.0"
     ember-cli-babel "^6.6.0"
+
+ember-page-title@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/ember-page-title/-/ember-page-title-4.0.3.tgz#0bb83c4519a5c79ed04a167bba3160884c198f86"
+  dependencies:
+    ember-cli-babel "^6.7.1"
+    ember-cli-head "^0.4.0"
+    ember-cli-htmlbars "^2.0.1"
 
 ember-parachute@^0.3.7:
   version "0.3.7"
