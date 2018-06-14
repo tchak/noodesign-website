@@ -8,7 +8,8 @@ const path = require('path');
 
 base('Content Fr')
   .select({
-    view: 'table'
+    view: 'table',
+    filterByFormula: '{Published} = TRUE()'
   })
   .eachPage(
     function page(records) {
