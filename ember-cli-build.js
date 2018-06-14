@@ -5,6 +5,9 @@ const crawl = require('prember-crawler');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+    sourcemaps: {
+      enabled: true
+    },
     babel: {
       plugins: ['transform-object-rest-spread']
     },
