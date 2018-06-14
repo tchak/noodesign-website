@@ -1,11 +1,11 @@
 <div class="container md:px-8 flex flex-col items-center justify-around">
   <div class="my-16">
-    {{responsive-image image="logo.png" id="top" class="w-full max-h-screen" alt=""}}
+    <ResponsiveImage @image="logo.png" id="top" class="w-full max-h-screen" alt="" />
   </div>
 
   <h2 id="about" class="text-center m-6 p-4">{{t "nav.about"}}</h2>
 
-  {{text-block text=model.about.description}}
+  <TextBlock @text={{model.about.description}} />
 
   <h2 id="events" class="text-center m-6 p-4">{{t "nav.events"}}</h2>
   {{#each model.upcoming as |event|}}
@@ -23,7 +23,7 @@
 
   <h2 id="projects" class="text-center m-6 p-4">{{t "nav.projects"}}</h2>
   {{#each model.projects as |project|}}
-    {{project-block project=project}}
+    <ProjectBlock @project={{project}} />
   {{/each}}
 
   <h2 id="archived" class="text-center m-6 p-4">{{t "nav.archived"}}</h2>
