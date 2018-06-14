@@ -2,8 +2,8 @@
 
 module.exports = function(/* environment, appConfig */) {
   return {
-    name: 'Noodesign',
-    short_name: 'Noodesign',
+    name: 'Noödesign',
+    short_name: 'Noödesign',
     description: '',
     start_url: '/',
     display: 'standalone',

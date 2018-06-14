@@ -43,6 +43,9 @@ module.exports = function(defaults) {
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
     },
+    'ember-composable-helpers': {
+      only: ['toggle']
+    },
     vendorFiles: {
       'jquery.js': null
     }

@@ -69,6 +69,7 @@
     "ember-service-worker-asset-cache": "^0.6.2",
     "ember-service-worker-index": "^0.6.7",
     "ember-source": "~3.2.0",
+    "ember-truth-helpers": "^2.0.0",
     "ember-web-app": "^2.3.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-ember": "^5.0.0",
