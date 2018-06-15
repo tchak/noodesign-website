@@ -1,6 +1,13 @@
 nav:
-  about: 'QUI SOMMES-NOÖS ?'
-  events: 'ÉVÉNEMENTS EN PRÉPARATION'
-  projects: 'PROJETS'
-  archived: 'ARCHIVES'
-  contact: 'CONTACT'
+  title: Menu
+  about: WHO ARE WE?
+  events: EVENTS TO COME
+  projects: PROJECTS
+  archived: ARCHIVES
+  contact: CONTACT
+at: at
+_at: at
+partners: In partnership with
+guests: "with:"
+organisers: "Partners and organisers:"
+contact: "contact:"

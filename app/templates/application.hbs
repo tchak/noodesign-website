@@ -11,7 +11,7 @@
     <div class="block md:hidden">
       <button {{action (toggle "isExpanded" headData)}} class="flex items-center px-3 py-2 border rounded text-grey-light border-grey-light hover:text-grey-lighter hover:border-grey-lighter">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-          <title>Menu</title>
+          <title>{{t "nav.title"}}</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
         </svg>
       </button>
@@ -33,7 +33,7 @@
 
   <A11yLandmark @tagName="footer" id="contact" class="bg-black font-sans text-white md:text-lg p-6 mt-12 flex-no-shrink">
     <p class="text-center m-6">
-      contact : <a class="text-white" href="mailto:{{headData.email}}">{{headData.email}}</a>
+      {{t "contact"}} <a class="text-white" href="mailto:{{headData.email}}">{{headData.email}}</a>
     </p>
   </A11yLandmark>
 </div>
