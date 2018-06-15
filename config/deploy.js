@@ -14,8 +14,9 @@ module.exports = function(deployTarget) {
     ENV.build.environment = 'development';
   }
 
-  // if (deployTarget === 'staging') {}
-  // if (deployTarget === 'production') {}
+  ENV.cp = {
+    destDir: './build'
+  };
 
   ENV.ftp = {
     host: 'ftp.cluster026.hosting.ovh.net',

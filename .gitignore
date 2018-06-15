@@ -4,6 +4,7 @@
 /dist
 /tmp
 /public/content/*
+/build
 
 # dependencies
 /node_modules
@@ -23,3 +24,4 @@ testem.log
 bower.json.ember-try
 package.json.ember-try
 /.env
+/netlifyctl-debug.log

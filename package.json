@@ -17,7 +17,8 @@
     "lint:hbs": "ember-template-lint app/templates/* app/templates/**/*",
     "start": "ember serve",
     "test": "ember test",
-    "download": "scripts/download.js"
+    "download": "scripts/download.js",
+    "deploy": "scripts/netlifyctl deploy -A $NETLIFY_TOKEN -P ./build"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.1",
@@ -37,6 +38,7 @@
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-deploy": "^1.0.2",
     "ember-cli-deploy-build": "^1.1.1",
+    "ember-cli-deploy-cp": "^0.3.2",
     "ember-cli-deploy-display-revisions": "^1.0.0",
     "ember-cli-deploy-ftp": "tchak/ember-cli-deploy-ftp#update-dependencies",
     "ember-cli-deploy-manifest": "^1.1.0",

@@ -14,7 +14,7 @@ module.exports = function(defaults) {
     prember: {
       async urls({ visit }) {
         let urls = await crawl({ visit });
-        return urls.filter(url => !url.match(/^\/#/));
+        return urls.filter(url => !url.match(/^\/\?target=/));
       }
     },
     emberCliConcat: {
