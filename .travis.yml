@@ -37,9 +37,7 @@ script:
 
 deploy:
   provider: script
-  script:
-    - ember deploy production --activate --verbose
-    - yarn deploy
+  script: bash scripts/deploy.sh
   skip_cleanup: true
   on:
     branch: master

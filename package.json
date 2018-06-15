@@ -12,13 +12,11 @@
   "repository": "",
   "scripts": {
     "build": "ember build",
-    "build:prod": "yarn download && ember build -e production",
     "lint:js": "eslint ./*.js app blueprints config lib server tests",
     "lint:hbs": "ember-template-lint app/templates/* app/templates/**/*",
     "start": "ember serve",
     "test": "ember test",
-    "download": "scripts/download.js",
-    "deploy": "scripts/netlifyctl deploy -A $NETLIFY_TOKEN -P ./build"
+    "download": "scripts/download.js"
   },
   "devDependencies": {
     "@ember/optional-features": "^0.6.1",
