@@ -46,6 +46,9 @@ module.exports = function(defaults) {
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
     },
+    'esw-cache-fallback': {
+      patterns: ['/', '/events/(.+)', '/content/(.+)']
+    },
     'ember-composable-helpers': {
       only: ['toggle']
     },
