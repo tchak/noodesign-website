@@ -42,7 +42,7 @@ module.exports = function(defaults) {
       ]
     },
     'ember-service-worker': {
-      enabled: false,
+      enabled: EmberApp.env() === 'production',
       versionStrategy: 'every-build',
       registrationStrategy: 'inline'
     },
