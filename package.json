@@ -86,6 +86,7 @@
     "prember-crawler": "^0.1.0",
     "prember-middleware": "^0.1.0",
     "prettier": "^1.12.1",
+    "qunit-dom": "^0.6.3",
     "tailwindcss": "^0.5.3"
   },
   "engines": {
