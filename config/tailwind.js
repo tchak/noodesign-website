@@ -581,10 +581,15 @@ module.exports = {
     '2': '0.5rem',
     '3': '0.75rem',
     '4': '1rem',
+    '5': '1.25rem',
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
-    '12': '3rem'
+    '12': '3rem',
+    '16': '4rem',
+    '20': '5rem',
+    '24': '6rem',
+    '32': '8rem'
   },
 
   /*
@@ -610,11 +615,15 @@ module.exports = {
     '2': '0.5rem',
     '3': '0.75rem',
     '4': '1rem',
+    '5': '1.25rem',
     '6': '1.5rem',
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
-    '16': '4rem'
+    '16': '4rem',
+    '20': '5rem',
+    '24': '6rem',
+    '32': '8rem'
   },
 
   /*
@@ -660,10 +669,11 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    // default: '0 2px 4px 0 rgba(0,0,0,0.10)',
+    // md: '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
+    // lg: '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
+    // inner: 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    outline: '0 0 0 3px rgba(52,144,220,0.5)',
     none: 'none'
   },
 
@@ -800,7 +810,7 @@ module.exports = {
     // pointerEvents: ['responsive'],
     position: ['responsive'],
     // resize: ['responsive'],
-    // shadows: ['responsive'],
+    shadows: [],
     // svgFill: [],
     // svgStroke: [],
     textAlign: ['responsive'],
