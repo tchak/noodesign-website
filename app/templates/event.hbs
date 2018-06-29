@@ -14,10 +14,12 @@
     <p class="text-left mb-6">{{t "guests"}} {{join model.guests}}</p>
   {{/if}}
 
-  <p class="text-left mb-2">{{t "organisers"}}</p>
-  {{#each model.partners as |text|}}
-    <p class="text-left mb-2">{{text}}</p>
-  {{/each}}
+  {{#if model.partners.length}}
+    <p class="text-left mb-2">{{t "organisers"}}</p>
+    {{#each model.partners as |text|}}
+      <p class="text-left mb-2">{{text}}</p>
+    {{/each}}
+  {{/if}}
 
   {{#each model.urls as |url|}}
     <p class="text-left mb-2">
