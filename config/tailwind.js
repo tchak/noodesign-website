@@ -810,7 +810,7 @@ module.exports = {
     // pointerEvents: ['responsive'],
     position: ['responsive'],
     // resize: ['responsive'],
-    shadows: [],
+    shadows: ['focus'],
     // svgFill: [],
     // svgStroke: [],
     textAlign: ['responsive'],

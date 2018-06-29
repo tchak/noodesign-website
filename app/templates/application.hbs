@@ -4,7 +4,7 @@
 <div class="flex flex-col font-mono text-black leading-normal text-base h-full mt-12">
   <A11yLandmark @tagName="header" class="flex fixed pin-t pin-r pin-l items-center justify-between flex-wrap font-sans p-4 border-b border-grey-lighter bg-white z-10">
     <h1 class="flex items-center flex-no-shrink mr-8">
-      <a href={{href-to "index" (query-params target="top")}}>
+      <a href={{href-to "index" (query-params target="top")}} class="focus:outline-none focus:shadow-outline p-1">
         {{responsive-image image="logo_noos.png" class="w-48" alt="NOODESIGN"}}
       </a>
     </h1>
@@ -19,7 +19,8 @@
     <div class="{{if headData.isExpanded 'block' 'hidden md:block'}} w-full flex-grow md:flex md:items-center md:w-auto mt-2">
       <div class="text-sm md:flex-grow">
         {{#each model.nav as |link|}}
-          <a href={{href-to "index" (query-params target=link)}} class="text-base font-light block mt-4 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4">
+          <a href={{href-to "index" (query-params target=link)}}
+            class="text-base font-light block p-1 md:inline-block md:mt-0 hover:text-grey-light text-black no-underline mr-4 focus:outline-none focus:shadow-outline">
             {{t (concat "nav." link)}}
           </a>
         {{/each}}
@@ -33,7 +34,7 @@
 
   <A11yLandmark @tagName="footer" id="contact" class="bg-black font-sans text-white md:text-lg p-6 mt-12 flex-no-shrink">
     <p class="text-center m-6">
-      {{t "contact"}} <a class="text-white" href="mailto:{{headData.email}}">{{headData.email}}</a>
+      {{t "contact"}} <a class="text-white p-1 focus:outline-none focus:shadow-outline" href="mailto:{{headData.email}}">{{headData.email}}</a>
     </p>
   </A11yLandmark>
 </div>
