@@ -1,29 +1,41 @@
 {{title model.label}}
-
 <div class="container md:px-8">
-  <h2 class="text-center m-8">{{model.label}}</h2>
-
-  <time class="block font-medium">{{model.date}}</time>
-  <h3 class="mt-4 mb-6">{{model.title}}</h3>
-
+  <h2 class="text-center m-8">
+    {{model.label}}
+  </h2>
+  <time class="block font-medium">
+    {{model.date}}
+  </time>
+  <h3 class="mt-4 mb-6">
+    {{model.title}}
+  </h3>
   {{#if model.location}}
-    <p class="text-left mb-6">{{at model.location}} {{model.location}}</p>
+    <p class="text-left mb-6">
+      {{at model.location}}
+      {{model.location}}
+    </p>
   {{/if}}
-
   {{#if model.guests.length}}
-    <p class="text-left mb-6">{{t "guests"}} {{join model.guests}}</p>
+    <p class="text-left mb-6">
+      {{t "guests"}}
+      {{join model.guests}}
+    </p>
   {{/if}}
-
   {{#if model.partners.length}}
-    <p class="text-left mb-2">{{t "organisers"}}</p>
+    <p class="text-left mb-2">
+      {{t "organisers"}}
+    </p>
     {{#each model.partners as |text|}}
-      <p class="text-left mb-2">{{text}}</p>
+      <p class="text-left mb-2">
+        {{text}}
+      </p>
     {{/each}}
   {{/if}}
-
   {{#each model.urls as |url|}}
     <p class="text-left mb-2">
-      <a href={{url}}>{{link-title url}}</a>
+      <a href={{url}}>
+        {{link-title url}}
+      </a>
     </p>
   {{/each}}
 </div>

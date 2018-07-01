@@ -1,11 +1,14 @@
 <slug class="w-full text-left">
-  <h3 class="mb-2">{{@project.title}}</h3>
-
-  <p class="text-left mb-2">{{at @project.location}} {{@project.location}}</p>
-
+  <h3 class="mb-2">
+    {{@project.title}}
+  </h3>
+  <p class="text-left mb-2">
+    {{at @project.location}}
+    {{@project.location}}
+  </p>
   <p class="text-left mb-6">
-    {{t "partners"}} {{join @project.partners}}
+    {{t "partners"}}
+    {{join @project.partners}}
   </p>
 </slug>
-
-<TextBlock @text={{@project.description}} />
+<TextBlock @text={{@project.description}}></TextBlock>

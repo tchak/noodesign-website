@@ -1,44 +1,21 @@
-<div class="container md:px-8 flex flex-col items-center justify-around">
-  <div class="my-16">
-    <ResponsiveImage @image="logo.png" id="top" class="w-full max-h-screen" alt="" />
-  </div>
-
-  <h2 id="about" class="text-center m-6 p-4">{{t "nav.about"}}</h2>
-
-  <TextBlock @text={{model.about.description}} />
-
-  <h2 id="events" class="text-center m-6 p-4">{{t "nav.events"}}</h2>
-  {{#each model.upcoming as |event|}}
-    <a href={{href-to "event" event.slug}} class="
-      bg-igor-{{event.color}}-gray hover:bg-white
-      text-igor-{{event.color}} hover:text-igor-{{event.color}}-lighter
-      transition-bg
-      m-4 h-32 md:h-48 w-full md:w-2/3
-      no-underline font-bold text-sm md:text-xl
-      items-center justify-around
-      focus:outline-none focus:shadow-outline
-      flex">
-      {{event.label}}
-    </a>
-  {{/each}}
-
-  <h2 id="projects" class="text-center m-6 p-4">{{t "nav.projects"}}</h2>
+<div class={{css "page"}}>
+  <LogoBlock></LogoBlock>
+  <h2 id="about" class="text-center m-6 p-4">
+    {{t "nav.about"}}
+  </h2>
+  <TextBlock @text={{model.about.description}}></TextBlock>
+  <h2 id="events" class="text-center m-6 p-4">
+    {{t "nav.events"}}
+  </h2>
+  <EventsList @events={{model.upcoming}}></EventsList>
+  <h2 id="projects" class="text-center m-6 p-4">
+    {{t "nav.projects"}}
+  </h2>
   {{#each model.projects as |project|}}
-    <ProjectBlock @project={{project}} />
+    <ProjectBlock @project={{project}}></ProjectBlock>
   {{/each}}
-
-  <h2 id="archived" class="text-center m-6 p-4">{{t "nav.archived"}}</h2>
-  {{#each model.archived as |event|}}
-    <a href={{href-to "event" event.slug}} class="
-      bg-igor-{{event.color}}-gray hover:bg-white
-      text-igor-{{event.color}} hover:text-igor-{{event.color}}-lighter
-      transition-bg
-      m-4 h-32 md:h-48 w-full md:w-2/3
-      no-underline font-bold text-sm md:text-xl
-      items-center justify-around
-      focus:outline-none focus:shadow-outline
-      flex">
-      {{event.label}}
-    </a>
-  {{/each}}
+  <h2 id="archived" class="text-center m-6 p-4">
+    {{t "nav.archived"}}
+  </h2>
+  <EventsList @events={{model.archived}}></EventsList>
 </div>
