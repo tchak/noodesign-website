@@ -1,13 +1,13 @@
-<HeadLayout></HeadLayout>
+<HeadLayout />
 {{title "Noödesign"}}
 <div class={{css "application"}}>
   <A11yLandmark @tagName="header" class={{css "header"}}>
-    <HomeButton></HomeButton>
-    <MenuButton @onClick={{toggle "isExpanded" headData}}></MenuButton>
-    <MenuList @isExpanded={{headData.isExpanded}} @nav={{model.nav}}></MenuList>
+    <HomeButton />
+    <MenuButton @onClick={{toggle "isExpanded" headData}} />
+    <MenuList @isExpanded={{headData.isExpanded}} @nav={{model.nav}} />
   </A11yLandmark>
   <A11yLandmark @tagName="main" class="mt-6 mb-12 flex-1">
-    <FocusingOutlet></FocusingOutlet>
+    <FocusingOutlet />
   </A11yLandmark>
   <A11yLandmark @tagName="footer" id="contact" class={{css "footer"}}>
     <p class="text-center m-6">
