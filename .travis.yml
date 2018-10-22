@@ -33,6 +33,7 @@ install:
 script:
   - yarn download
   - yarn lint:js
+  - yarn bundlesize
   - yarn test
 
 deploy:

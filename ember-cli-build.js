@@ -4,6 +4,10 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const crawl = require('prember-crawler');
 
 module.exports = function(defaults) {
+  const environment = EmberApp.env();
+  const enableFullProductionBuild =
+    environment === 'production' && !process.env.BUNDLESIZE;
+
   let app = new EmberApp(defaults, {
     sourcemaps: {
       enabled: true
@@ -12,14 +16,10 @@ module.exports = function(defaults) {
       plugins: ['@babel/plugin-proposal-object-rest-spread']
     },
     prember: {
+      enabled: enableFullProductionBuild,
       async urls({ visit }) {
         let urls = await crawl({ visit });
         return urls.filter(url => !url.match(/^\/\?target=/));
-      }
-    },
-    emberCliConcat: {
-      css: {
-        concat: true
       }
     },
     postcssOptions: {
@@ -31,15 +31,17 @@ module.exports = function(defaults) {
       fonts: ['IBM Plex Sans Condensed', 'IBM Plex Mono']
     },
     'ember-cli-image-transformer': {
-      images: [
-        {
-          inputFilename: 'public/assets/images/generate/logo.png',
-          outputFileName: 'appicon-',
-          convertTo: 'png',
-          destination: 'assets/icons/',
-          sizes: [32, 192, 280, 512]
-        }
-      ]
+      images: enableFullProductionBuild
+        ? [
+            {
+              inputFilename: 'public/assets/images/generate/logo.png',
+              outputFileName: 'appicon-',
+              convertTo: 'png',
+              destination: 'assets/icons/',
+              sizes: [32, 192, 280, 512]
+            }
+          ]
+        : []
     },
     'ember-service-worker': {
       enabled: EmberApp.env() === 'production',
@@ -51,9 +53,6 @@ module.exports = function(defaults) {
     },
     'ember-composable-helpers': {
       only: ['toggle']
-    },
-    vendorFiles: {
-      'jquery.js': null
     }
   });
 
