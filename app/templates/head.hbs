@@ -7,22 +7,22 @@
 <meta name="description" content={{t "description"}} />
 <meta name="referrer" content="unsafe-url" />
 {{#if model.canonical}}
-  <link rel="canonical" href="{{model.canonical}}" />
+  <link rel="canonical" href={{model.canonical}} />
 {{else if model.url}}
-  <link rel="canonical" href="{{model.url}}" />
+  <link rel="canonical" href={{model.url}} />
 {{/if}}
 {{! End General }}
 {{! Begin Article }}
 {{#if model.date}}
-  <meta property="article:published_time" content="{{model.date}}" />
+  <meta property="article:published_time" content={{model.date}} />
 {{/if}}
 {{#each model.tags as |tag|}}
-  <meta property="article:tag" content="{{tag}}" />
+  <meta property="article:tag" content={{tag}} />
 {{/each}}
 {{! End Article }}
 {{! Begin opengraph (Facebook, Slack, etc) }}
 {{#if model.siteName}}
-  <meta property="og:site_name" content="{{model.siteName}}" />
+  <meta property="og:site_name" content={{model.siteName}} />
 {{/if}}
 {{#if (or model.articleTitle model.title)}}
   <meta
@@ -39,7 +39,7 @@
   <meta property="og:type" content={{model.type}} />
 {{/if}}
 {{#if model.imgSrc}}
-  <meta property="og:image" content="{{model.imgSrc}}" />
+  <meta property="og:image" content={{model.imgSrc}} />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="256" />
   <meta property="og:image:height" content="256" />
@@ -48,11 +48,11 @@
 {{! Begin Twitter }}
 <meta name="twitter:card" content="summary" />
 {{#if model.twitter}}
-  <meta name="twitter:site" content="{{model.twitter}}" />
-  <meta name="twitter:creator" content="{{model.twitter}}" />
+  <meta name="twitter:site" content={{model.twitter}} />
+  <meta name="twitter:creator" content={{model.twitter}} />
 {{/if}}
 {{#if model.imgSrc}}
-  <meta name="twitter:image:src" content="{{model.imgSrc}}" />
+  <meta name="twitter:image:src" content={{model.imgSrc}} />
 {{/if}}
 {{#if (or model.articleTitle model.title)}}
   <meta
@@ -69,10 +69,10 @@
 {{/if}}
 {{#if model.author}}
   <meta name="twitter:label1" content="Written by" />
-  <meta name="twitter:data1" content="{{model.author}}" />
+  <meta name="twitter:data1" content={{model.author}} />
 {{/if}}
 {{#if model.keywords}}
   <meta name="twitter:label2" content="Filed under" />
-  <meta name="twitter:data2" content="{{model.keywords}}" />
+  <meta name="twitter:data2" content={{model.keywords}} />
 {{/if}}
 {{! End Twitter }}
