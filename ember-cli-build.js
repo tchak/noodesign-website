@@ -4,9 +4,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const crawl = require('prember-crawler');
 
 module.exports = function(defaults) {
-  const environment = EmberApp.env();
-  const enableFullProductionBuild =
-    environment === 'production' && !process.env.BUNDLESIZE;
+  const pluginsToBlacklist = process.env.BUNDLESIZE
+    ? ['prember', 'ember-cli-image-transformer']
+    : [];
 
   let app = new EmberApp(defaults, {
     sourcemaps: {
@@ -16,7 +16,6 @@ module.exports = function(defaults) {
       plugins: ['@babel/plugin-proposal-object-rest-spread']
     },
     prember: {
-      enabled: enableFullProductionBuild,
       async urls({ visit }) {
         let urls = await crawl({ visit });
         return urls.filter(url => !url.match(/^\/\?target=/));
@@ -31,17 +30,14 @@ module.exports = function(defaults) {
       fonts: ['IBM Plex Sans Condensed', 'IBM Plex Mono']
     },
     'ember-cli-image-transformer': {
-      images: enableFullProductionBuild
-        ? [
-            {
-              inputFilename: 'public/assets/images/generate/logo.png',
-              outputFileName: 'appicon-',
-              convertTo: 'png',
-              destination: 'assets/icons/',
-              sizes: [32, 192, 280, 512]
-            }
-          ]
-        : []
+      images: [
+        {
+          inputFilename: 'public/assets/images/generate/logo.png',
+          outputFileName: 'appicon-',
+          convertTo: 'png',
+          sizes: [32, 192, 280, 512]
+        }
+      ]
     },
     'ember-service-worker': {
       enabled: EmberApp.env() === 'production',
@@ -53,21 +49,11 @@ module.exports = function(defaults) {
     },
     'ember-composable-helpers': {
       only: ['toggle']
+    },
+    addons: {
+      blacklist: pluginsToBlacklist
     }
   });
-
-  // Use `app.import` to add additional libraries to the generated
-  // output files.
-  //
-  // If you need to use different assets in different
-  // environments, specify an object as the first parameter. That
-  // object's keys should be the environment name and the values
-  // should be the asset to use in that environment.
-  //
-  // If the library that you are including contains AMD or ES6
-  // modules that you would like to import into your application
-  // please specify an object with the list of modules as keys
-  // along with the exports of each module as its value.
 
   return app.toTree();
 };
