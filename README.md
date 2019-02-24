@@ -1,57 +1,45 @@
-# noodesign
+<div align="center">
+  <img src="https://image.ibb.co/cJjPN7/gatsby_tailwind.png" alt="Gatsby and Tailwind CSS logos">
+</div>
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+<div align="center">
+  <strong>A <a href="https://www.gatsbyjs.org/">Gatsby</a> starter styled using <a href="https://tailwindcss.com/">Tailwind</a>, a utility-first CSS framework.</strong><br />
+  Uses <a href="https://www.purgecss.com/">Purgecss</a> to remove unused CSS.<br />
+  Illustrations by <a href="https://undraw.co/">unDraw</a>.
+  <br />
+  <br />
+</div>
+  
+![alt text](https://image.ibb.co/jv6FC7/gatsby_starter_tailwind.png "Screenshot of Gatsby Starter Tailwind homepage")
+  
+<p align="center">View demo <a href="https://quizzical-mcclintock-0226ac.netlify.com/">here</a>.</p>
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
+## Getting started
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/)
-* [Yarn](https://yarnpkg.com/)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+Install Gatsby CLI:
+```sh
+npm i --global gatsby-cli
+```
 
-## Installation
+Create new Gatsby project using this starter:
+```sh
+gatsby new my-new-website https://github.com/taylorbryant/gatsby-starter-tailwind
+```
 
-* `git clone <repository-url>` this repository
-* `cd noodesign`
-* `yarn install`
+Build stylesheet from Tailwind config and run project locally:
+```sh
+cd my-new-website
+npm run develop
+```
 
-## Running / Development
+## Deploy
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/taylorbryant/gatsby-starter-tailwind)
 
-### Code Generators
+## Resources
+* [Gatsby documentation](https://www.gatsbyjs.org/docs/)
+* [Tailwind documentation](https://tailwindcss.com/docs/what-is-tailwind/)
 
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+## License
+[MIT](https://github.com/taylorbryant/gatsby-starter-tailwind/blob/master/LICENSE.md)
