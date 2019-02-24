@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { StaticQuery, graphql } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { StaticQuery, graphql } from 'gatsby';
 
-import Header from "./header";
+import Header from './header';
 
 function Layout({ children }) {
   return (
@@ -22,7 +22,7 @@ function Layout({ children }) {
 
           <div
             role="main"
-            className="flex flex-col flex-1 mx-auto px-4 py-8 md:p-8 w-full tracking-wide"
+            className="flex flex-col flex-1 w-full tracking-wide"
           >
             {children}
           </div>
