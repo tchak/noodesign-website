@@ -1,26 +1,11 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# Project dependencies
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+.cache
+node_modules
+yarn-error.log
 
-# compiled output
-/dist/
-/tmp/
-/public/content
+# Build directory
+/public
 
-# dependencies
-/bower_components/
-/node_modules/
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage/
-/libpeerconnection.log
-/npm-debug.log*
-/testem.log
-/yarn-error.log
-
-# ember-try
-/.node_modules.ember-try/
-/bower.json.ember-try
-/package.json.ember-try
-/.env
-/netlifyctl-debug.log
+# macOS
+.DS_Store
