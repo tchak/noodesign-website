@@ -195,6 +195,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Open Sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -221,6 +222,7 @@ module.exports = {
       'serif',
     ],
     'mono': [
+      'Roboto Mono',
       'Menlo',
       'Monaco',
       'Consolas',

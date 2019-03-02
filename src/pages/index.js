@@ -12,7 +12,7 @@ const debug = isDebug ? 'border border-white' : '';
 const centerFlex = 'flex flex-col items-center justify-around';
 const contentTextHeader = 'mb-10 text-center';
 const contentText =
-  'mt-10 flex-grow md:w-2/5 text-lg leading-loose mx-auto font-thin';
+  'font-mono mt-10 flex-grow md:w-2/5 text-lg leading-loose mx-auto font-thin';
 
 function IndexPage() {
   return (
@@ -20,7 +20,7 @@ function IndexPage() {
       <SEO title="Noodesign" keywords={['noodesign']} />
 
       <Parallax pages={5}>
-        <ParallaxLayer tagName="section" offset={0} speed={0.5}>
+        <ParallaxLayer offset={0} speed={0.5}>
           <section
             id="noosdesign"
             className={`min-h-screen ${centerFlex} ${debug}`}

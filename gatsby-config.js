@@ -25,6 +25,14 @@ module.exports = {
         purgeOnly: ['src/css/style.css'],
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Open Sans', 'Roboto Mono']
+        }
+      }
+    },
     'gatsby-plugin-netlify'
   ],
 }
