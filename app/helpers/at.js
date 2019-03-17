@@ -12,6 +12,7 @@ export default Helper.extend({
     return this.intl.t('at');
   },
 
+  // eslint-disable-next-line ember/no-observers
   currentURLObserver: observer('intl.locale', function() {
     this.recompute();
   })

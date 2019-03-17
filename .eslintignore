@@ -5,9 +5,12 @@
 # compiled output
 /dist/
 /tmp/
+/scripts/
+/.cache/
 
 # dependencies
 /bower_components/
+/node_modules/
 
 # misc
 /coverage/
