@@ -1,20 +1,20 @@
-{{title model.label}}
+{{title model.title}}
 <div class="container md:px-8">
   <h2 class="text-center m-8">
-    {{model.label}}
+    {{model.title}}
   </h2>
-  <time class="block font-medium">
+  <time class="block font-medium mb-6">
     {{model.date}}
   </time>
-  <h3 class="mt-4 mb-6">
-    {{model.title}}
-  </h3>
   {{#if model.location}}
     <p class="text-left mb-6">
       {{at model.location}}
       {{model.location}}
     </p>
   {{/if}}
+  <p class="text-left mb-6">
+    {{model.description}}
+  </p>
   {{#if model.guests.length}}
     <p class="text-left mb-6">
       {{t "guests"}}
