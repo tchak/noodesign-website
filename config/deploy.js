@@ -18,13 +18,5 @@ module.exports = function(deployTarget) {
     destDir: './build'
   };
 
-  ENV.ftp = {
-    host: 'ftp.cluster026.hosting.ovh.net',
-    username: process.env.FTP_USERNAME,
-    password: process.env.FTP_PASSWORD,
-    remoteRoot: '/www',
-    exclude: ['assets/fonts/**/*']
-  };
-
   return ENV;
 };

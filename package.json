@@ -18,7 +18,8 @@
     "test": "ember test",
     "format:hbs": "prettier --write --parser glimmer 'app/**/*.hbs'",
     "download": "scripts/download.js",
-    "bundlesize": "BUNDLESIZE=true ember bundlesize:test"
+    "bundlesize": "BUNDLESIZE=true ember bundlesize:test",
+    "deploy": "yarn download && ember deploy production --activate --verbose"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -39,7 +40,6 @@
     "ember-cli-deploy-build": "^1.1.1",
     "ember-cli-deploy-cp": "^0.3.2",
     "ember-cli-deploy-display-revisions": "^1.0.0",
-    "ember-cli-deploy-ftp": "Turbo87/ember-cli-deploy-ftp",
     "ember-cli-deploy-manifest": "^1.1.0",
     "ember-cli-deploy-revision-data": "^1.0.0",
     "ember-cli-eslint": "^5.1.0",

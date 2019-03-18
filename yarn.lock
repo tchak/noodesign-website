@@ -751,14 +751,6 @@
   resolved "https://registry.yarnpkg.com/@ibm/plex/-/plex-1.0.2.tgz#d11bb043619081d5ee332db74f048d8711ca606b"
   integrity sha512-i/qo3UkCpp8uUtJbN4dFluh6Y3ZiNgfrtAQ8OMHA/WmIsD38R+wE6jM0Va+LvuOtgtPOtK9JCyRk+Y1Yrw9nPw==
 
-"@icetee/ftp@^0.3.15":
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/@icetee/ftp/-/ftp-0.3.15.tgz#d32efd91ab7585f0a3b6cbed9ceffe2763b04ec6"
-  integrity sha512-RxSa9VjcDWgWCYsaLdZItdCnJj7p4LxggaEk+Y3MP0dHKoxez8ioG07DVekVbZZqccsrL+oPB/N9AzVPxj4blg==
-  dependencies:
-    readable-stream "1.1.x"
-    xregexp "2.0.0"
-
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -2209,7 +2201,7 @@ blob@0.0.4:
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.4.tgz#bcf13052ca54463f30f9fc7e95b9a47630a94921"
   integrity sha1-vPEwUspURj8w+fx+lbmkdjCpSSE=
 
-bluebird@2.x, bluebird@^2.9.33:
+bluebird@^2.9.33:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-2.11.0.tgz#534b9033c022c9579c56ba3b3e5a5caafbb650e1"
   integrity sha1-U0uQM8AiyVecVro7Plpcqvu2UOE=
@@ -4525,13 +4517,6 @@ ember-cli-deploy-display-revisions@^1.0.0:
     moment "^2.18.0"
     rsvp "^3.5.0"
 
-ember-cli-deploy-ftp@Turbo87/ember-cli-deploy-ftp:
-  version "1.0.0"
-  resolved "https://codeload.github.com/Turbo87/ember-cli-deploy-ftp/tar.gz/45d07d6520a68d57e5cce4596af0d1107bc9308f"
-  dependencies:
-    ember-cli-deploy-plugin "^0.2.9"
-    ftp-deploy "^2.1.1"
-
 ember-cli-deploy-manifest@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/ember-cli-deploy-manifest/-/ember-cli-deploy-manifest-1.1.0.tgz#096c4d1502c00935cabdbb9a38619ee3195ef927"
@@ -4543,7 +4528,7 @@ ember-cli-deploy-manifest@^1.1.0:
     minimatch "^3.0.3"
     rsvp "^3.5.0"
 
-ember-cli-deploy-plugin@^0.2.0, ember-cli-deploy-plugin@^0.2.1, ember-cli-deploy-plugin@^0.2.3, ember-cli-deploy-plugin@^0.2.6, ember-cli-deploy-plugin@^0.2.9:
+ember-cli-deploy-plugin@^0.2.0, ember-cli-deploy-plugin@^0.2.1, ember-cli-deploy-plugin@^0.2.3, ember-cli-deploy-plugin@^0.2.6:
   version "0.2.9"
   resolved "https://registry.yarnpkg.com/ember-cli-deploy-plugin/-/ember-cli-deploy-plugin-0.2.9.tgz#a3d395b8adad7ef68d8bacdd0b0f4a61bcf9e651"
   integrity sha1-o9OVuK2tfvaNi6zdCw9KYbz55lE=
@@ -6473,17 +6458,6 @@ fsevents@^1.2.2, fsevents@^1.2.3:
   dependencies:
     nan "^2.9.2"
     node-pre-gyp "^0.10.0"
-
-ftp-deploy@^2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/ftp-deploy/-/ftp-deploy-2.1.1.tgz#d383c900b8285edb41661c79f6ebef920f064f69"
-  integrity sha512-AKSQs+Yr6Y9uciHC/IPs4lXfxMEqgW4/yGttw7we8BMKnGBXhHldVpP29b5FF0cN0VoV40ACao9v8MxlCR5b7g==
-  dependencies:
-    bluebird "^3.5.1"
-    minimatch "3.0.4"
-    promise-ftp "^1.3.5"
-    read "^1.0.7"
-    upath "^1.0.5"
 
 function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
@@ -8629,7 +8603,7 @@ minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
 
-"minimatch@2 || 3", minimatch@3.0.4, minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
+"minimatch@2 || 3", minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -8770,7 +8744,7 @@ mute-stream@0.0.6:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.6.tgz#48962b19e169fd1dfc240b3f1e7317627bbc47db"
   integrity sha1-SJYrGeFp/R38JAs/HnMXYnu8R9s=
 
-mute-stream@0.0.7, mute-stream@~0.0.4:
+mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
   integrity sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=
@@ -9732,20 +9706,6 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
   integrity sha1-ihvjZr+Pwj2yvSPxDG/pILQ4nR8=
 
-promise-ftp-common@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/promise-ftp-common/-/promise-ftp-common-1.1.5.tgz#b4f8082a74035647703506763edb14230d9865da"
-  integrity sha1-tPgIKnQDVkdwNQZ2PtsUIw2YZdo=
-
-promise-ftp@^1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/promise-ftp/-/promise-ftp-1.3.5.tgz#ecfa4a5e5b779a6bfdd4dd3096957b58286f5104"
-  integrity sha512-v368jPSqzmjjKDIyggulC+dRFcpAOEX7aFdEWkFYQp8Ao3P2N4Y6XnFFdKgK7PtkylwvGQkZR/65HZuzmq0V7A==
-  dependencies:
-    "@icetee/ftp" "^0.3.15"
-    bluebird "2.x"
-    promise-ftp-common "^1.1.5"
-
 promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
@@ -10018,13 +9978,6 @@ read-pkg@^1.0.0:
     normalize-package-data "^2.3.2"
     path-type "^1.0.0"
 
-read@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/read/-/read-1.0.7.tgz#b3da19bd052431a97671d44a42634adf710b40c4"
-  integrity sha1-s9oZvQUkMal2cdRKQmNK33ELQMQ=
-  dependencies:
-    mute-stream "~0.0.4"
-
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.0.4, readable-stream@^2.0.6, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.0, readable-stream@^2.3.3, readable-stream@^2.3.5, readable-stream@^2.3.6:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
@@ -10037,16 +9990,6 @@ read@^1.0.7:
     safe-buffer "~5.1.1"
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
-
-readable-stream@1.1.x:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
-  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
-  dependencies:
-    core-util-is "~1.0.0"
-    inherits "~2.0.1"
-    isarray "0.0.1"
-    string_decoder "~0.10.x"
 
 readable-stream@~1.0.2:
   version "1.0.34"
@@ -12361,11 +12304,6 @@ xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
   integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
-
-xregexp@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-2.0.0.tgz#52a63e56ca0b84a7f3a5f3d61872f126ad7a5943"
-  integrity sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=
 
 xtend@^4.0.0, xtend@~4.0.0, xtend@~4.0.1:
   version "4.0.1"
