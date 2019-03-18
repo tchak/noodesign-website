@@ -17,9 +17,9 @@
     "start": "ember serve",
     "test": "ember test",
     "format:hbs": "prettier --write --parser glimmer 'app/**/*.hbs'",
-    "download": "scripts/download.js",
     "bundlesize": "BUNDLESIZE=true ember bundlesize:test",
-    "deploy": "yarn download && ember deploy production --activate --verbose"
+    "deploy": "ember deploy production --activate",
+    "build:netlify": "scripts/download.js && yarn deploy"
   },
   "devDependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
