@@ -3,6 +3,10 @@
     href={{href-to "event" event.slug}}
     class={{css "event-link" color=event.color}}
   >
-    {{event.label}}
+    <ResponsiveBackground
+      @image="affiche_designingcommunity.jpg"
+      class="w-full h-64 md:h-screen bg-contain bg-center bg-no-repeat"
+    />
   </a>
+
 {{/each}}
