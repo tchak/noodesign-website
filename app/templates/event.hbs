@@ -9,7 +9,21 @@
   {{#if model.location}}
     <p class="text-left mb-6">
       {{at model.location}}
-      {{model.location}}
+      {{autoLink model.location}}
+    </p>
+    <p class="text-center">
+    {{#if model.isCurrent}}
+      <ResponsiveImage @image="niemeyer.jpg" class="w-full" alt="Auditorium Espace Niemeyer" />
+    {{/if}}
+    </p>
+  {{/if}}
+  <p class="text-left my-6">
+    {{model.description}}
+  </p>
+  {{#if model.guests.length}}
+    <p class="text-left mb-6">
+      {{t "guests"}}
+      {{join model.guests}}
     </p>
   {{/if}}
   {{#if model.isCurrent}}
@@ -19,15 +33,6 @@
       <li>Durée de la discussion avec 3 ou 4 autres intervenants : 20 min</li>
       <li>Déjeuner : 2 buffets avec tous les intervenants</li>
     </ul>
-  {{/if}}
-  <p class="text-left mb-6">
-    {{model.description}}
-  </p>
-  {{#if model.guests.length}}
-    <p class="text-left mb-6">
-      {{t "guests"}}
-      {{join model.guests}}
-    </p>
   {{/if}}
   {{#if model.partners.length}}
     <p class="text-left mb-2">
