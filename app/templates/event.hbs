@@ -31,14 +31,14 @@
       {{join model.guests}}
     </p>
   {{/if}}
-  {{#if model.isCurrent}}
+  {{!-- {{#if model.isCurrent}}
     <ul class="list-reset mb-6">
       <li>Nombre d’intervenants : 30</li>
       <li>Durée des interventions : 30 min</li>
       <li>Durée de la discussion avec 3 ou 4 autres intervenants : 20 min</li>
       <li>Déjeuner : 2 buffets avec tous les intervenants</li>
     </ul>
-  {{/if}}
+  {{/if}} --}}
   {{#if model.partners.length}}
     <p class="text-left mb-2">
       {{t "organisers"}}
