@@ -39,14 +39,6 @@ module.exports = function(defaults) {
         }
       ]
     },
-    'ember-service-worker': {
-      enabled: EmberApp.env() === 'production',
-      versionStrategy: 'every-build',
-      registrationStrategy: 'inline'
-    },
-    'esw-cache-fallback': {
-      patterns: ['/', '/events/(.+)', '/content/(.+)']
-    },
     'ember-composable-helpers': {
       only: ['toggle']
     },
