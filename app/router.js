@@ -9,6 +9,9 @@ const Router = EmberRouter.extend(RouterScroll, {
 
 Router.map(function() {
   this.route('event', { path: 'events/:id' });
+  this.route('argumentaire-theorique', {
+    path: 'designing-community/argumentaire-theorique'
+  });
 });
 
 export default Router;

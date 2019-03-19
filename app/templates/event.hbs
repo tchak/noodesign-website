@@ -17,9 +17,14 @@
     {{/if}}
     </p>
   {{/if}}
-  <p class="text-left my-6">
+  <p class="text-left my-4">
     {{model.description}}
   </p>
+  {{#if model.isCurrent}}
+    {{#link-to 'argumentaire-theorique' class="block mb-6"}}
+      Argumentaire théorique
+    {{/link-to}}
+  {{/if}}
   {{#if model.guests.length}}
     <p class="text-left mb-6">
       {{t "guests"}}
