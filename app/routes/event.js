@@ -9,6 +9,10 @@ export default Route.extend({
   async model({ id }) {
     const [locale] = this.intl.locale;
     const { events } = await load(this.adapter.fetch, locale);
-    return events.find(({ slug }) => slug === id);
+    const event = events.find(({ slug }) => slug === id);
+    if (event.slug === 'colloque-2019') {
+      event.isCurrent = true;
+    }
+    return event;
   }
 });

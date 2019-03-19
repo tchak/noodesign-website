@@ -12,6 +12,14 @@
       {{model.location}}
     </p>
   {{/if}}
+  {{#if model.isCurrent}}
+    <ul class="list-reset mb-6">
+      <li>Nombre d’intervenants : 30</li>
+      <li>Durée des interventions : 30 min</li>
+      <li>Durée de la discussion avec 3 ou 4 autres intervenants : 20 min</li>
+      <li>Déjeuner : 2 buffets avec tous les intervenants</li>
+    </ul>
+  {{/if}}
   <p class="text-left mb-6">
     {{model.description}}
   </p>
@@ -27,7 +35,7 @@
     </p>
     {{#each model.partners as |text|}}
       <p class="text-left mb-2">
-        {{text}}
+        {{autoLink text}}
       </p>
     {{/each}}
   {{/if}}

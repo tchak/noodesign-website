@@ -7,7 +7,7 @@
   <h2 id="events" class="text-center m-6 p-4">
     {{t "nav.events"}}
   </h2>
-  <EventsList @events={{model.upcoming}} />
+  <CurrentEvent @event={{model.upcoming.firstObject}} />
   <h2 id="projects" class="text-center m-6 p-4">
     {{t "nav.projects"}}
   </h2>
@@ -17,5 +17,5 @@
   <h2 id="archived" class="text-center m-6 p-4">
     {{t "nav.archived"}}
   </h2>
-  {{!-- <EventsList @events={{model.archived}} /> --}}
+  <EventsList @events={{model.archived}} />
 </div>

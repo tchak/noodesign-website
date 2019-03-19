@@ -32,7 +32,12 @@ const styles = {
     px-3 py-2
     text-grey-light hover:text-grey-lighter
     border rounded border-grey-light hover:border-grey-lighter`,
-  eventLink: `${link} ${flexAround} m-4 p-4 w-full`,
+  currentEvent: `${link} ${flexAround} m-4 p-4 w-full`,
+  eventLink: `${link} ${flexAround}
+    bg-igor-{{color}}-gray text-igor-{{color}}
+    hover:bg-white hover:text-igor-{{color}}-lighter transition-bg
+    m-4 h-32 md:h-48 w-full md:w-2/3
+    font-bold text-sm md:text-xl`,
   navLink: `${link} text-base font-light
     p-1 mr-4 md:mt-0
     block md:inline-block
