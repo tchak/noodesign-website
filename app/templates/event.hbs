@@ -1,31 +1,59 @@
 {{title model.title}}
 <div class="container md:px-8">
-  <EventTitle class="text-center m-8">
-    {{model.title}}
-  </EventTitle>
-  <time class="block font-medium mb-6">
-    {{model.date}}
-  </time>
-  {{#if model.location}}
+  {{#if model.isCurrent}}
+    <ResponsiveImage
+      @image="affiche_designingcommunity.jpg"
+      class="w-full"
+      alt={{model.title}}
+    />
+    <time class="block font-medium my-6 text-left">
+      {{t "Les 19 et 20 avril 2019"}}
+    </time>
+    
     <p class="text-left mb-6">
-      {{at model.location}}
-      {{autoLink model.location}}
+      <a
+        href="https://espace-niemeyer.fr/index.php/plans/"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block font-medium hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t
+          "dans l'auditorium de l'Espace Niemeyer ; 2, place du colonel Fabien ; 75019 Paris"
+        }}
+      </a>
     </p>
-    <p class="text-center">
-      {{!-- {{#if model.isCurrent}}
-        <ResponsiveImage
-          @image="niemeyer.jpg"
-          class="w-full"
-          alt="Auditorium Espace Niemeyer"
-        />
-      {{/if}} --}}
+    <p class="text-left mb-6">
+      <a
+        href="https://vimeo.com/327944021"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t "Le teaser du colloque"}}
+      </a>
     </p>
+  {{else}}
+    <EventTitle class="text-center m-8">
+      {{model.title}}
+    </EventTitle>
+    <time class="block font-medium mb-6">
+      {{model.date}}
+    </time>
+    {{#if model.location}}
+      <p class="text-left mb-6">
+        {{at model.location}}
+        {{autoLink model.location}}
+      </p>
+    {{/if}}
   {{/if}}
   <p class="text-left my-4">
     {{model.description}}
   </p>
   {{#if model.isCurrent}}
-    {{#link-to "argumentaire-theorique" class="block mb-6"}}
+    {{#link-to
+      "argumentaire-theorique"
+      class="block mb-6 hover:bg-grey-lightest text-grey-darkest shadow"
+    }}
       {{t "Argumentaire théorique"}}
     {{/link-to}}
   {{/if}}
@@ -63,5 +91,7 @@
     </p>
   {{/each}}
 
-  <ResponsiveImage @image="partners.png" class="w-full mt-6" alt="Partenaires" />
+  {{#if model.isCurrent}}
+    <ResponsiveImage @image="partners.png" class="w-full mt-6" alt="Partenaires" />
+  {{/if}}
 </div>
