@@ -12,17 +12,21 @@
       {{autoLink model.location}}
     </p>
     <p class="text-center">
-    {{#if model.isCurrent}}
-      <ResponsiveImage @image="niemeyer.jpg" class="w-full" alt="Auditorium Espace Niemeyer" />
-    {{/if}}
+      {{!-- {{#if model.isCurrent}}
+        <ResponsiveImage
+          @image="niemeyer.jpg"
+          class="w-full"
+          alt="Auditorium Espace Niemeyer"
+        />
+      {{/if}} --}}
     </p>
   {{/if}}
   <p class="text-left my-4">
     {{model.description}}
   </p>
   {{#if model.isCurrent}}
-    {{#link-to 'argumentaire-theorique' class="block mb-6"}}
-      Argumentaire théorique
+    {{#link-to "argumentaire-theorique" class="block mb-6"}}
+      {{t "Argumentaire théorique"}}
     {{/link-to}}
   {{/if}}
   {{#if model.guests.length}}
@@ -39,16 +43,18 @@
       <li>Déjeuner : 2 buffets avec tous les intervenants</li>
     </ul>
   {{/if}} --}}
-  {{#if model.partners.length}}
-    <p class="text-left mb-2">
-      {{t "organisers"}}
-    </p>
-    {{#each model.partners as |text|}}
+  {{#unless model.isCurrent}}
+    {{#if model.partners.length}}
       <p class="text-left mb-2">
-        {{autoLink text}}
+        {{t "organisers"}}
       </p>
-    {{/each}}
-  {{/if}}
+      {{#each model.partners as |text|}}
+        <p class="text-left mb-2">
+          {{autoLink text}}
+        </p>
+      {{/each}}
+    {{/if}}
+  {{/unless}}
   {{#each model.urls as |url|}}
     <p class="text-left mb-2">
       <a href={{url}}>
