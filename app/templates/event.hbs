@@ -6,38 +6,59 @@
       class="w-full"
       alt={{model.title}}
     />
-    <time class="block font-medium my-6 text-left">
+    <time class="block font-semibold my-6 text-left">
       {{t "Les 19 et 20 avril 2019"}}
     </time>
     
-    <p class="text-left mb-6">
+    <p class="text-left mb-4">
       <a
         href="https://espace-niemeyer.fr/index.php/plans/"
         target="_blank"
         rel="noreferrer noopener"
-        class="block font-medium hover:bg-grey-lightest text-grey-darkest shadow"
+        class="block font-semibold no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
       >
-        {{t
-          "dans l'auditorium de l'Espace Niemeyer ; 2, place du colonel Fabien ; 75019 Paris"
-        }}
+        {{t "l’auditorium de l’Espace Niemeyer"}}
       </a>
     </p>
-    <p class="text-left mb-6">
+
+    <p class="text-left mb-4">
+      <a
+        href="/brochure.pdf"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t "Brochure"}}
+      </a>
+    </p>
+
+    <p class="text-left mb-4">
+      <a
+        href="/programme.jpg"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t "Programme"}}
+      </a>
+    </p>
+
+    <p class="text-left mb-4">
       <a
         href="https://vimeo.com/327944021"
         target="_blank"
         rel="noreferrer noopener"
-        class="block hover:bg-grey-lightest text-grey-darkest shadow"
+        class="block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
       >
         {{t "Le teaser du colloque"}}
       </a>
     </p>
-    <p class="text-left mb-6">
+    <p class="text-left mb-4">
       <a
         href="https://www.eventbrite.fr/e/billets-designing-community-59780348632?aff=ebdshpsearchautocomplete"
         target="_blank"
         rel="noreferrer noopener"
-        class="block hover:bg-grey-lightest text-grey-darkest shadow"
+        class="block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
       >
         {{t "Pour s’inscrire"}}
       </a>
@@ -62,7 +83,7 @@
   {{#if model.isCurrent}}
     {{#link-to
       "argumentaire-theorique"
-      class="block mb-6 hover:bg-grey-lightest text-grey-darkest shadow"
+      class="mb-4 block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
     }}
       {{t "Argumentaire théorique"}}
     {{/link-to}}
@@ -81,18 +102,18 @@
       <li>Déjeuner : 2 buffets avec tous les intervenants</li>
     </ul>
   {{/if}} --}}
-  {{#unless model.isCurrent}}
-    {{#if model.partners.length}}
+
+  {{#if model.partners.length}}
+    <p class="text-left mb-2">
+      {{t "organisers"}}
+    </p>
+    {{#each model.partners as |text|}}
       <p class="text-left mb-2">
-        {{t "organisers"}}
+        {{autoLink text}}
       </p>
-      {{#each model.partners as |text|}}
-        <p class="text-left mb-2">
-          {{autoLink text}}
-        </p>
-      {{/each}}
-    {{/if}}
-  {{/unless}}
+    {{/each}}
+  {{/if}}
+
   {{#each model.urls as |url|}}
     <p class="text-left mb-2">
       <a href={{url}}>
