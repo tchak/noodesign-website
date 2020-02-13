@@ -4,7 +4,7 @@ import { computed } from '@ember/object';
 export default Service.extend({
   responsiveImage: service(),
 
-  siteName: 'NOÖDESIGN | MEDIATING MINDS BY TECHNOLOGIES',
+  siteName: 'noödesign | mediating minds by technologies',
   url: 'https://noodesign.org',
   email: 'contact@noodesign.org',
   twitter: '@IgorGalligo',
