@@ -9,12 +9,6 @@ module.exports = function(defaults) {
     : [];
 
   let app = new EmberApp(defaults, {
-    sourcemaps: {
-      enabled: true
-    },
-    babel: {
-      plugins: ['@babel/plugin-proposal-object-rest-spread']
-    },
     prember: {
       async urls({ visit }) {
         let urls = await crawl({ visit });

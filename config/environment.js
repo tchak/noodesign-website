@@ -23,10 +23,6 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    sentry: {
-      debug: false
-    },
-
     'responsive-image': {
       sourceDir: 'assets/images/generate',
       destinationDir: 'assets/images/responsive',
@@ -52,8 +48,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.sentry.debug = true;
-    ENV.sentry.development = true;
   }
 
   if (environment === 'test') {
@@ -66,11 +60,9 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
-    ENV.sentry.development = true;
   }
 
   if (environment === 'production') {
-    ENV.sentry.dsn = process.env.SENTRY_DSN;
   }
 
   return ENV;

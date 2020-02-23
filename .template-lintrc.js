@@ -5,6 +5,6 @@ module.exports = {
 
   rules: {
     'self-closing-void-elements': false,
-    'no-bare-strings': true
+    'no-bare-strings': false
   }
 };
