@@ -59,6 +59,8 @@ function slugify(block) {
       .replace(/\s|\//g, '-')
       .toLowerCase();
     const isCurrent = slug === 'colloque-2019';
+    const isDc = slug === 'colloque-2019';
+    const isDnp = slug === 'dnp-2020';
 
     const color = colors[index];
     if (index < 6) {
@@ -67,7 +69,7 @@ function slugify(block) {
       index = 0;
     }
 
-    return { ...block, label, slug, color, isCurrent };
+    return { ...block, label, slug, color, isCurrent, isDc, isDnp };
   }
   return block;
 }

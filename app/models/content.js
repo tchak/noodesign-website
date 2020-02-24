@@ -11,7 +11,10 @@ export const content = [
     urls: ['https://www.youtube.com/watch?v=GW3u4-lQyMw'],
     description: [],
     slug: 'conference-mai-2018',
-    color: 1
+    color: 3,
+    isCurrent: false,
+    isDc: false,
+    isDnp: false
   },
   {
     title:
@@ -36,7 +39,10 @@ export const content = [
     guests: [],
     description: [],
     slug: 'colloque-15-et-16-octobre-2015',
-    color: 2
+    color: 4,
+    isCurrent: false,
+    isDc: false,
+    isDnp: false
   },
   {
     title: '« Muséographie et attention, vers un art de l’ambiance »',
@@ -58,7 +64,10 @@ export const content = [
     ],
     guests: [],
     slug: 'seminaire-2015-2016',
-    color: 3
+    color: 5,
+    isCurrent: false,
+    isDc: false,
+    isDnp: false
   },
   {
     title: '« Le design de l’attention, Création et Automatisation »',
@@ -80,7 +89,10 @@ export const content = [
     ],
     guests: [],
     slug: 'seminaire-2014-2015',
-    color: 4
+    color: 6,
+    isCurrent: false,
+    isDc: false,
+    isDnp: false
   },
   {
     title: '« Ecologie de l’attention »',
@@ -102,7 +114,10 @@ export const content = [
     guests: [],
     description: [],
     slug: 'seminaire-2013-2014',
-    color: 5
+    color: 7,
+    isCurrent: false,
+    isDc: false,
+    isDnp: false
   },
   {
     title: '"Designing Community"',
@@ -167,10 +182,12 @@ export const content = [
     ],
     label: 'COLLOQUE 2019',
     urls: [],
-    archived: false,
+    archived: true,
     slug: 'colloque-2019',
-    color: 6,
-    isCurrent: true
+    color: 1,
+    isCurrent: true,
+    isDc: true,
+    isDnp: false
   },
   {
     title: 'Qui sommes-nous ?',

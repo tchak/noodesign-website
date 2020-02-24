@@ -1,6 +1,7 @@
 {{title @model.title}}
+
 <div class="container md:px-8">
-  {{#if @model.isCurrent}}
+  {{#if @model.isDc}}
     <ResponsiveImage
       @image="affiche_designingcommunity.jpg"
       class="w-full"
@@ -63,6 +64,37 @@
         {{t "Pour s’inscrire"}}
       </a>
     </p>
+  {{else if @model.isDnp}}
+      <ResponsiveImage
+      @image="DNP_affiche.jpg"
+      class="w-full"
+      alt={{@model.title}}
+    />
+    <time class="block font-semibold my-6 text-left">
+      {{t "Le samedi 7 mars 2020"}}
+    </time>
+
+    <p class="text-left mb-4">
+      <a
+        href="https://www.mshparisnord.fr"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block font-semibold no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t "Maison des Sciences de l’Homme Paris Nord"}}
+      </a>
+    </p>
+
+    <p class="text-left mb-4">
+      <a
+        href="https://www.helloasso.com/associations/noodesign/evenements/democratie-numerique-populaire"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
+      >
+        {{t "Pour s’inscrire"}}
+      </a>
+    </p>
   {{else}}
     <EventTitle class="text-center m-8">
       {{@model.title}}
@@ -78,9 +110,13 @@
     {{/if}}
   {{/if}}
   <p class="text-left my-4">
-    {{@model.description}}
+    {{#each @model.description as |line|}}
+      <p>
+        {{line}}
+      </p>
+    {{/each}}
   </p>
-  {{#if @model.isCurrent}}
+  {{#if @model.isDc}}
     {{#link-to
       "argumentaire-theorique"
       class="mb-4 block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
@@ -94,24 +130,30 @@
       {{join @model.guests}}
     </p>
   {{/if}}
-  {{!-- {{#if model.isCurrent}}
-    <ul class="list-reset mb-6">
-      <li>Nombre d’intervenants : 30</li>
-      <li>Durée des interventions : 30 min</li>
-      <li>Durée de la discussion avec 3 ou 4 autres intervenants : 20 min</li>
-      <li>Déjeuner : 2 buffets avec tous les intervenants</li>
-    </ul>
-  {{/if}} --}}
 
   {{#if @model.partners.length}}
-    <p class="text-left mb-2">
-      {{t "organisers"}}
-    </p>
-    {{#each @model.partners as |text|}}
+    {{#if @model.isDnp}}
+      {{#each @model.partners as |category|}}
+        <p class="text-left mb-2 font-bold">
+          {{category.label}} :
+        </p>
+        {{#each category.partners as |text|}}
+          <p class="text-left mb-2">
+            {{autoLink text}}
+          </p>
+        {{/each}}
+      {{/each}}
+    {{else}}
       <p class="text-left mb-2">
-        {{autoLink text}}
+        {{t "organisers"}}
       </p>
-    {{/each}}
+
+      {{#each @model.partners as |text|}}
+        <p class="text-left mb-2">
+          {{autoLink text}}
+        </p>
+      {{/each}}
+    {{/if}}
   {{/if}}
 
   {{#each @model.urls as |url|}}
@@ -122,9 +164,15 @@
     </p>
   {{/each}}
 
-  {{#if @model.isCurrent}}
+  {{#if @model.isDc}}
     <ResponsiveImage
       @image="partners.png"
+      class="w-full mt-6"
+      alt="Partenaires"
+    />
+  {{else if @model.isDnp}}
+    <ResponsiveImage
+      @image="DNP_partners.png"
       class="w-full mt-6"
       alt="Partenaires"
     />
