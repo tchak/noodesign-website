@@ -1,8 +1,11 @@
 <h1 class="flex items-center flex-no-shrink mr-8">
   <a
     href={{href-to "index" (query-params target="top")}}
-    class="focus:outline-none focus:shadow-outline p-1"
+    class="focus:outline-none focus:shadow-outline p-1 no-underline"
   >
-    <ResponsiveImage @image="logo_noos.png" class="w-48" alt="Noödesign" />
+    <div class="flex flex-col">
+      <ResponsiveImage @image="logo_noos.png" class="w-48" alt="Noödesign" />
+      <span class="text-xs text-center text-grey-darkest mt-1">{{t "mediating minds by technologies"}}</span>
+    </div>
   </a>
 </h1>
