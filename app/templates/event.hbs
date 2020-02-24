@@ -1,15 +1,15 @@
-{{title model.title}}
+{{title @model.title}}
 <div class="container md:px-8">
-  {{#if model.isCurrent}}
+  {{#if @model.isCurrent}}
     <ResponsiveImage
       @image="affiche_designingcommunity.jpg"
       class="w-full"
-      alt={{model.title}}
+      alt={{@model.title}}
     />
     <time class="block font-semibold my-6 text-left">
       {{t "Les 19 et 20 avril 2019"}}
     </time>
-    
+
     <p class="text-left mb-4">
       <a
         href="https://espace-niemeyer.fr/index.php/plans/"
@@ -65,22 +65,22 @@
     </p>
   {{else}}
     <EventTitle class="text-center m-8">
-      {{model.title}}
+      {{@model.title}}
     </EventTitle>
     <time class="block font-medium mb-6">
-      {{model.date}}
+      {{@model.date}}
     </time>
-    {{#if model.location}}
+    {{#if @model.location}}
       <p class="text-left mb-6">
-        {{at model.location}}
-        {{autoLink model.location}}
+        {{at @model.location}}
+        {{autoLink @model.location}}
       </p>
     {{/if}}
   {{/if}}
   <p class="text-left my-4">
-    {{model.description}}
+    {{@model.description}}
   </p>
-  {{#if model.isCurrent}}
+  {{#if @model.isCurrent}}
     {{#link-to
       "argumentaire-theorique"
       class="mb-4 block font-medium no-underline hover:underline hover:bg-grey-lightest text-grey-darkest shadow"
@@ -88,10 +88,10 @@
       {{t "Argumentaire théorique"}}
     {{/link-to}}
   {{/if}}
-  {{#if model.guests.length}}
+  {{#if @model.guests.length}}
     <p class="text-left mb-6">
       {{t "guests"}}
-      {{join model.guests}}
+      {{join @model.guests}}
     </p>
   {{/if}}
   {{!-- {{#if model.isCurrent}}
@@ -103,18 +103,18 @@
     </ul>
   {{/if}} --}}
 
-  {{#if model.partners.length}}
+  {{#if @model.partners.length}}
     <p class="text-left mb-2">
       {{t "organisers"}}
     </p>
-    {{#each model.partners as |text|}}
+    {{#each @model.partners as |text|}}
       <p class="text-left mb-2">
         {{autoLink text}}
       </p>
     {{/each}}
   {{/if}}
 
-  {{#each model.urls as |url|}}
+  {{#each @model.urls as |url|}}
     <p class="text-left mb-2">
       <a href={{url}}>
         {{link-title url}}
@@ -122,7 +122,11 @@
     </p>
   {{/each}}
 
-  {{#if model.isCurrent}}
-    <ResponsiveImage @image="partners.png" class="w-full mt-6" alt="Partenaires" />
+  {{#if @model.isCurrent}}
+    <ResponsiveImage
+      @image="partners.png"
+      class="w-full mt-6"
+      alt="Partenaires"
+    />
   {{/if}}
 </div>

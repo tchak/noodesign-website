@@ -1,10 +1,15 @@
-'use strict';
-
 module.exports = {
-  extends: 'recommended',
+  plugins: ['ember-template-lint-plugin-prettier'],
+
+  extends: ['octane', 'ember-template-lint-plugin-prettier:recommended'],
 
   rules: {
-    'self-closing-void-elements': false,
-    'no-bare-strings': false
+    'no-bare-strings': false,
+    prettier: true,
+    // ember-template-lint stylistic rules
+    'block-indentation': false,
+    'linebreak-style': false,
+    quotes: false,
+    'self-closing-void-elements': false
   }
 };

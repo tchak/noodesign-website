@@ -1,6 +1,6 @@
 import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 
-export default Controller.extend({
-  headData: service()
-});
+export default class extends Controller {
+  @service headData;
+}

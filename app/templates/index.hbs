@@ -3,19 +3,19 @@
   <h2 id="about" class="text-center m-6 p-4">
     {{t "nav.about"}}
   </h2>
-  <TextBlock @text={{model.about.description}} />
+  <TextBlock @text={{@model.about.description}} />
   <h2 id="events" class="text-center m-6 p-4">
     {{t "nav.events"}}
   </h2>
-  <CurrentEvent @event={{model.upcoming.firstObject}} />
+  <CurrentEvent @event={{@model.upcoming.firstObject}} />
   <h2 id="projects" class="text-center m-6 p-4">
     {{t "nav.projects"}}
   </h2>
-  {{#each model.projects as |project|}}
+  {{#each @model.projects as |project|}}
     <ProjectBlock @project={{project}} />
   {{/each}}
   <h2 id="archived" class="text-center m-6 p-4">
     {{t "nav.archived"}}
   </h2>
-  <EventsList @events={{model.archived}} />
+  <EventsList @events={{@model.archived}} />
 </div>

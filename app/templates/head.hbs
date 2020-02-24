@@ -4,7 +4,11 @@
     {{model.title}}
   </title>
 {{/if}}
-<meta name="description" property="og:description" content={{t "description"}} />
+<meta
+  name="description"
+  property="og:description"
+  content={{t "description"}}
+/>
 <meta name="referrer" content="unsafe-url" />
 {{#if model.canonical}}
   <link rel="canonical" href={{model.canonical}} />
@@ -15,7 +19,11 @@
 
 {{! Begin Article }}
 {{#if model.date}}
-  <meta name="article-published-time" property="article:published_time" content={{model.date}} />
+  <meta
+    name="article-published-time"
+    property="article:published_time"
+    content={{model.date}}
+  />
 {{/if}}
 {{#each model.tags as |tag|}}
   <meta name="article-tag" property="article:tag" content={{tag}} />
@@ -65,7 +73,6 @@
     name="twitter:title"
     content={{if model.articleTitle model.articleTitle model.title}}
   />
-
 {{/if}}
 {{#if model.url}}
   <meta name="twitter:url" content={{model.url}} />
