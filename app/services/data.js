@@ -18,9 +18,6 @@ async function contentGroupByType() {
   for (let block of content) {
     switch (block.type) {
       case 'event':
-        if (block.slug === 'colloque-2019') {
-          block.isCurrent = true;
-        }
         events.push(block);
         if (block.archived) {
           archived.push(block);

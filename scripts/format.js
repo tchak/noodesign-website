@@ -58,6 +58,7 @@ function slugify(block) {
       .replace(/É/g, 'E')
       .replace(/\s|\//g, '-')
       .toLowerCase();
+    const isCurrent = slug === 'colloque-2019';
 
     const color = colors[index];
     if (index < 6) {
@@ -66,7 +67,7 @@ function slugify(block) {
       index = 0;
     }
 
-    return { ...block, label, slug, color };
+    return { ...block, label, slug, color, isCurrent };
   }
   return block;
 }

@@ -169,7 +169,8 @@ export const content = [
     urls: [],
     archived: false,
     slug: 'colloque-2019',
-    color: 6
+    color: 6,
+    isCurrent: true
   },
   {
     title: 'Qui sommes-nous ?',

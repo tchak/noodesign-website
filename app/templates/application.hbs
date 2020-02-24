@@ -7,7 +7,7 @@
     <MenuList @isExpanded={{headData.isExpanded}} @nav={{model.nav}} />
   </A11yLandmark>
   <A11yLandmark @tagName="main" class="mt-6 mb-12 flex-1">
-    <FocusingOutlet />
+    {{outlet}}
   </A11yLandmark>
   <A11yLandmark @tagName="footer" id="contact" class={{css "footer"}}>
     <p class="text-center m-6">
