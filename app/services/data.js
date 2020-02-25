@@ -21,7 +21,7 @@ content.push({
     'Nous serons également en duplex avec l’Assemblée des Assemblées n°5 des Gilets Jaunes, qui aura lieu à Toulouse, le même jour.',
     'En espérant vous voir nombreux !'
   ],
-  date: '19 et 20 avril 2020',
+  date: 'Le samedi 7 mars 2020, de 9h à 19h30',
   location:
     'Maison des Sciences de l’Homme Paris Nord https://www.mshparisnord.fr',
   partners: [
