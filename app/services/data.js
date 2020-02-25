@@ -97,7 +97,7 @@ content.push({
     'Didier Maisto',
     'Yves Citton',
     'Clément Mabi',
-    'Nicolas Bouchaud',
+    'Nikos Bonnieure',
     'Hakim Lowe',
     'David Prost',
     'Michael Gas',
