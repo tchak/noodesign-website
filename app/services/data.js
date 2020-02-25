@@ -14,10 +14,11 @@ content.push({
     'Loin des clichés médiatiques, il faut attester que le mouvement des Gilets Jaunes s’est différencié des luttes politiques françaises antérieures par de nombreux usages, pratiques et projets technologiques, médiatiques et numériques.',
     'Les Gilets Jaunes ont habité les réseaux sociaux numériques (Facebook, Instagram, Whatsapp, Telegram, Mastodon, etc.) pour communiquer, se mobiliser, se coordonner, se regrouper. Certains ont fait corps avec de nouvelles technologies audiovisuelles (caméras embarquées, GoPro, smartphones, etc.) pour informer ou documenter des aspects méconnus ou des expériences vécues au sein du mouvement social. D’autres plus célèbres se sont réappropriés des dispositifs tels que le Facebook Live pour créer de nouvelles manières interactives de faire communauté.',
     'Au-delà de ces appropriations, les Gilets Jaunes sont aussi devenus des concepteurs de plateformes numériques pour développer de nouveaux outils technologiques d’organisation et de délibération.',
-    'Les Gilets Jaunes ne se sont donc pas seulement retrouvés sur les ronds-points de France ou venus manifester sur les Champs-Elysées, ils ont en plus imaginé, produit et expérimenté des conceptions numériques de la politique, fondés sur leurs cultures et leurs enjeux, afin de développer de nouvelles potentialités et expériences politiques.',
-    'C’est cette nouvelle Démocratie Numérique Populaire que nous souhaitons mettre en discussion le 7 mars entre des chercheurs, des ingénieurs, des designers numériques et bien sûr de nombreux Gilets Jaunes qui viendront de Paris, de région parisienne et de province. Nous serons également en duplex avec l’Assemblée des Assemblées n°5 des Gilets Jaunes, qui aura lieu à Toulouse, le même jour.',
-    'Nous souhaitons ainsi que les usages et productions numériques des Gilets Jaunes qui seront présentés puissent être nourris par la diversité des intervenants invités qui prendront part aux débats qui auront lieux le matin. L’après-midi, des ateliers communs (intervenants + public) seront organisés pour approfondir ces discussions avec l’ensemble des personnes présentes à l’évènement. Ces ateliers seront animés par les institutions et associations partenaires, citoyennes, Gilets Jaunes ou spécialisées sur le numérique.',
+    'Les Gilets Jaunes ne se sont donc pas seulement retrouvés sur les ronds-points de France ou venus manifester sur les Champs-Elysées, ils ont en plus imaginé et produit des conceptions numériques de la politique, fondées sur leurs cultures et leurs enjeux, afin de développer de nouvelles puissances et expériences politiques.',
+    'C’est cette nouvelle Démocratie Numérique Populaire que nous souhaitons mettre en discussion le 7 mars entre des chercheurs, des ingénieurs, des designers numériques et bien sûr de nombreux Gilets Jaunes qui viendront de Paris, de région parisienne et de province.',
+    'Nous espérons que les usages et productions numériques des Gilets Jaunes qui seront présentés puissent être nourris par la diversité des intervenants invités qui prendront part aux débats. L’après-midi, des ateliers communs (intervenants + public) seront organisés pour approfondir ces discussions avec l’ensemble des personnes présentes à l’évènement. Ces ateliers seront animés par les institutions et associations partenaires, citoyennes, Gilets Jaunes ou spécialisées sur le numérique.',
     'L’évènement sera filmé et retransmis en direct par l’équipe de la chaîne Quartier Général.',
+    'Nous serons également en duplex avec l’Assemblée des Assemblées n°5 des Gilets Jaunes, qui aura lieu à Toulouse, le même jour.',
     'En espérant vous voir nombreux !'
   ],
   date: '19 et 20 avril 2020',
@@ -42,7 +43,7 @@ content.push({
       partners: [
         'Le Pixel Mort',
         'Licorne News',
-        'Les Canards Réfractaires',
+        'Le Canard Réfractaire',
         'La mule du pape',
         'Bang Bang TV',
         'JR Cinematics'
@@ -67,7 +68,8 @@ content.push({
         'Framasoft',
         'Assemblée Virtuelle',
         'RiseFor',
-        'Noödesign'
+        'Noödesign',
+        'CartoDEBAT'
       ].sort()
     },
 
@@ -77,13 +79,14 @@ content.push({
         'ArTeC',
         'Le LERASS',
         'Le Laboratoire Triangle',
-        'Labex COMOD'
+        'Labex COMOD',
+        'Maison des Sciences de l’Homme Paris Nord'
       ].sort()
     }
   ],
   guests: [
     'Natasha Bernal',
-    'Jude',
+    'Jude Mas',
     'Yohan Pavec',
     'Kevin Revol',
     'Lucas Remak',
@@ -97,11 +100,11 @@ content.push({
     'Nicolas Bouchaud',
     'Hakim Lowe',
     'David Prost',
-    'Mickael Gas',
+    'Michael Gas',
     'Florence',
     'Bernard Stiegler',
     'Pascal Marchand',
-    'Vincent Levresque',
+    'Vincent Ventresque',
     'Stephane Crozat',
     'Pierre-Yves Gosset',
     'Nicole Alix',
@@ -114,7 +117,11 @@ content.push({
     'Dominique Pasquier',
     'Benjamin Coriat',
     'Luc Gwiazdzinski',
-    'Victor Petit'
+    'Victor Petit',
+    'Caterina Froio',
+    'Louis Ollagnon',
+    'Didier Fradin',
+    'Julien Lepeigneul'
   ].sort(),
   published: true,
   type: 'event',
