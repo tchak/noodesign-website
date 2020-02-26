@@ -27,7 +27,7 @@ content.push({
   partners: [
     {
       label: 'Partenaires scientifiques et financiers',
-      partners: ['Costech', 'EnCommuns', 'Le Médialab'].sort()
+      partners: ['Costech', 'EnCommuns', 'Le Médialab', 'CFE-CGC'].sort()
     },
     {
       label: 'Partenaires médias',
@@ -46,7 +46,8 @@ content.push({
         'Le Canard Réfractaire',
         'La mule du pape',
         'Bang Bang TV',
-        'JR Cinematics'
+        'JR Cinematics',
+        'Cémil choses à te dire'
       ].sort()
     },
     {
@@ -85,7 +86,7 @@ content.push({
     }
   ],
   guests: [
-    'Natasha Bernal',
+    'Natasha',
     'Jude Mas',
     'Yohan Pavec',
     'Kevin Revol',
@@ -121,7 +122,8 @@ content.push({
     'Caterina Froio',
     'Louis Ollagnon',
     'Didier Fradin',
-    'Julien Lepeigneul'
+    'Julien Lepeigneul',
+    'Cémil Sanli'
   ].sort(),
   published: true,
   type: 'event',
